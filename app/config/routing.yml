@@ -1,0 +1,4 @@
+imieskills:
+    resource: "@ImieskillsBundle/Resources/config/routing.yml"
+    prefix:   /
+

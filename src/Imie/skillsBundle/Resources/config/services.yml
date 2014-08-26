@@ -1,0 +1,7 @@
+parameters:
+#    imieskills.example.class: Imie\skillsBundle\Example
+
+services:
+#    imieskills.example:
+#        class: %imieskills.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
