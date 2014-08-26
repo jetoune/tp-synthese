@@ -1,3 +1,7 @@
+workgroups:
+    resource: "@WorkgroupsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 imieskills:
     resource: "@ImieskillsBundle/Resources/config/routing.yml"
     prefix:   /

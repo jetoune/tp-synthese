@@ -17,6 +17,7 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="ImieskillsBundle">Imie\skillsBundle\ImieskillsBundle</parameter>
+      <parameter key="WorkgroupsBundle">Imie\WorkgroupsBundle\WorkgroupsBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -2358,6 +2359,7 @@
           <call method="setEntityNamespaces">
             <argument type="collection">
               <argument key="ImieskillsBundle">Imie\skillsBundle\Entity</argument>
+              <argument key="WorkgroupsBundle">Imie\WorkgroupsBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -2396,10 +2398,23 @@
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
                         <argument>C:\wamp\www\tp-synthese\src\Imie\skillsBundle\Entity</argument>
+                        <argument>C:\wamp\www\tp-synthese\src\Imie\WorkgroupsBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>Imie\skillsBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>C:\wamp\www\tp-synthese\src\Imie\skillsBundle\Entity</argument>
+                        <argument>C:\wamp\www\tp-synthese\src\Imie\WorkgroupsBundle\Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Imie\WorkgroupsBundle\Entity</argument>
                 </call>
               </service>
             </argument>
@@ -2808,6 +2823,10 @@
       <call method="addPath">
         <argument>C:\wamp\www\tp-synthese\src\Imie\skillsBundle/Resources/views</argument>
         <argument>Imieskills</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\wamp\www\tp-synthese\src\Imie\WorkgroupsBundle/Resources/views</argument>
+        <argument>Workgroups</argument>
       </call>
       <call method="addPath">
         <argument>C:\wamp\www\tp-synthese\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>

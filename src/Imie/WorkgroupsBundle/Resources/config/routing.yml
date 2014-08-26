@@ -1,0 +1,3 @@
+workgroups_homepage:
+    path:     /workgroups
+    defaults: { _controller: WorkgroupsBundle:Workgroups:index }

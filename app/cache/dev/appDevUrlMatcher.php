@@ -135,6 +135,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // workgroups_homepage
+        if ($pathinfo === '/workgroups') {
+            return array (  '_controller' => 'Imie\\WorkgroupsBundle\\Controller\\WorkgroupsController::indexAction',  '_route' => 'workgroups_homepage',);
+        }
+
         if (0 === strpos($pathinfo, '/skills')) {
             // imieskills_skills
             if (preg_match('#^/skills/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
