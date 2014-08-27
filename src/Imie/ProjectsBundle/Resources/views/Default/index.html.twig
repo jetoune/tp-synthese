@@ -1,1 +1,16 @@
-Here will be the projects !
+Liste des projets :
+
+{% if  projects %}
+	<ul>
+		{% for project in projects %}
+			<li>
+				<p>{{project.name}}</p>
+				<p>{{project.startDate}}</p>
+				<p>{{project.endDate}}</p>
+				<p>{{project.rate}}</p>
+				<p>{{project.description}}</p>
+			</li>
+			
+		{% endfor %}
+	</ul>
+{% endif %}
