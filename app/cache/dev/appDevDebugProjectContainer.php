@@ -3566,7 +3566,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => 'C:/@dev/EasyPHP/data/localweb/projects/tp-synthese/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'app',
+            'kernel.name' => 'ap_',
             'kernel.cache_dir' => 'C:/@dev/EasyPHP/data/localweb/projects/tp-synthese/app/cache/dev',
             'kernel.logs_dir' => 'C:/@dev/EasyPHP/data/localweb/projects/tp-synthese/app/logs',
             'kernel.bundles' => array(
