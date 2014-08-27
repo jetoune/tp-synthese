@@ -10,4 +10,13 @@ class SkillsController extends Controller
     {
         return $this->render('ImieskillsBundle:Default:index.html.twig');
     }
+
+    public function getAllSkillsAction(){
+    	$repo = $this->getDoctrine()
+					->getRepository('ImieskillsBundle:skills');
+
+    	$skills = $repo->findAll();
+    	
+    	return $this->render('ImieskillsBundle:Default:skill.html.twig', array('skills' => $skills));
+    }
 }

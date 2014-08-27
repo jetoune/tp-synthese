@@ -1,0 +1,10 @@
+Compétences :
+
+
+{% if  skills %}
+	<ul>
+		{% for skill in skills %}
+			<li>{{skill.libelle}}</li>
+		{% endfor %}
+	</ul>
+{% endif %}

@@ -60,4 +60,22 @@ class skills
     {
         return $this->libelle;
     }
+
+    public function getSkillsById($id)
+    {
+        $this->idSkills = $id;
+
+    }
+
+    public function getAllSkills()
+    {
+        
+    }
+
+    public function getSkillsByName($name)
+    {
+        $this->libelle = $name;
+    }
+
+
 }

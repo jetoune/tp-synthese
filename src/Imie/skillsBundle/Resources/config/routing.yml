@@ -1,6 +1,6 @@
 imieskills_skills:
-    path:     /skills/{name}
-    defaults: { _controller: ImieskillsBundle:Skills:index }
+    path:     /skill
+    defaults: { _controller: ImieskillsBundle:Skills:getAllSkills }
 
 imieskills_skills_list:
     path:     /skills
