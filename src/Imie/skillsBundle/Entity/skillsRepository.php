@@ -4,6 +4,7 @@ namespace Imie\skillsBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
+
 /**
  * skillsRepository
  *
@@ -12,4 +13,11 @@ use Doctrine\ORM\EntityRepository;
  */
 class skillsRepository extends EntityRepository
 {
+	public function findAll() {
+		return $this->createQueryBuilder('s')
+					//->add('select', 'libelle')
+					//->add('from', 'skills as s')
+					->getQuery()
+					->getResult();
+	}
 }
