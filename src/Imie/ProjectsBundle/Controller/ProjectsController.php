@@ -10,6 +10,8 @@ class ProjectsController extends Controller
 {
     public function indexAction()
     {
+    	//On définit une variable projects qui sera surchargée
+        //Elle contiendra les résultats des requêtes
     	$projects = $this->getAllProjectsAction();
         return $this->render('ProjectsBundle:Default:index.html.twig', array('projects' => $projects));
     }
@@ -44,9 +46,10 @@ class ProjectsController extends Controller
     }
 
     public function getAllProjectsAction(){
+    	//On met l'accès au repo dans une variable
     	$repo = $this->getDoctrine()
 					->getRepository('ProjectsBundle:Projects');
-
-    	return $skills = $repo->findAll();
+		//Dans la variable projects, on récupère nos valeurs (Tous les détails d'un projet)
+    	return $projects = $repo->findAll();
     }
 }

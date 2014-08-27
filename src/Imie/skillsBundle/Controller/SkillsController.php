@@ -10,6 +10,8 @@ class SkillsController extends Controller
 {
     public function indexAction()
     {
+        //On définit une variable skills qui sera surchargée
+        //Elle contiendra les résultats des requêtes
         $skills = $this->getAllSkillsAction();
         return $this->render('ImieskillsBundle:Default:index.html.twig', array('skills' => $skills));
     }
@@ -44,9 +46,10 @@ class SkillsController extends Controller
     }
 
     public function getAllSkillsAction(){
+        //On met l'accès au repo dans une variable
     	$repo = $this->getDoctrine()
 					->getRepository('ImieskillsBundle:skills');
-
+        //Dans la variable skills, on récupère nos valeurs (nom des skills en BDD)
     	return $skills = $repo->findAll();
     }
 }
