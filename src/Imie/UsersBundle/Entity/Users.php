@@ -96,7 +96,6 @@ class Users
      * @var integer
      *
      * @ORM\Column(name="roles_id_roles", type="smallint")
-     * @ORM\Id
      */
     private $rolesIdRoles;
 
