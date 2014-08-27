@@ -135,6 +135,20 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // projects_homepage
+        if ($pathinfo === '/projects') {
+            return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\DefaultController::indexAction',  '_route' => 'projects_homepage',);
+        }
+
+        // home_homepage
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'home_homepage');
+            }
+
+            return array (  '_controller' => 'Imie\\HomeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'home_homepage',);
+        }
+
         // workgroups_homepage
         if ($pathinfo === '/workgroups') {
             return array (  '_controller' => 'Imie\\WorkgroupsBundle\\Controller\\WorkgroupsController::indexAction',  '_route' => 'workgroups_homepage',);

@@ -18,6 +18,10 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Imie\skillsBundle\ImieskillsBundle(),
             new Imie\WorkgroupsBundle\WorkgroupsBundle(),
+            new Imie\HomeBundle\HomeBundle(),
+            new Imie\ProjectsBundle\ProjectsBundle(),
+            new Imie\RolesBundle\RolesBundle(),
+            new Imie\UsersBundle\UsersBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
