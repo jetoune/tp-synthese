@@ -180,15 +180,15 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Imie\\WorkgroupsBundle\\Controller\\WorkgroupsController::indexAction',  '_route' => 'workgroups_homepage',);
         }
 
-        if (0 === strpos($pathinfo, '/skill')) {
-            // imieskills_skills
-            if ($pathinfo === '/skill') {
-                return array (  '_controller' => 'Imie\\skillsBundle\\Controller\\SkillsController::getAllSkillsAction',  '_route' => 'imieskills_skills',);
-            }
-
+        if (0 === strpos($pathinfo, '/skills')) {
             // imieskills_skills_list
             if ($pathinfo === '/skills') {
                 return array (  '_controller' => 'Imie\\skillsBundle\\Controller\\SkillsController::indexAction',  '_route' => 'imieskills_skills_list',);
+            }
+
+            // imieskills_skills_add
+            if ($pathinfo === '/skills/add') {
+                return array (  '_controller' => 'Imie\\skillsBundle\\Controller\\SkillsController::addAction',  '_route' => 'imieskills_skills_add',);
             }
 
         }
