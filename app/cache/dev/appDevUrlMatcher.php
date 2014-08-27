@@ -135,9 +135,30 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // projects_homepage
-        if ($pathinfo === '/projects') {
-            return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\DefaultController::indexAction',  '_route' => 'projects_homepage',);
+        if (0 === strpos($pathinfo, '/hello')) {
+            // users_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'users_homepage')), array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+            // roles_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'roles_homepage')), array (  '_controller' => 'Imie\\RolesBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/projects')) {
+            // projects_homepage
+            if ($pathinfo === '/projects') {
+                return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\ProjectsController::indexAction',  '_route' => 'projects_homepage',);
+            }
+
+            // projects_add
+            if ($pathinfo === '/projects/add') {
+                return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\ProjectsController::addAction',  '_route' => 'projects_add',);
+            }
+
         }
 
         // home_homepage
@@ -147,6 +168,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
 
             return array (  '_controller' => 'Imie\\HomeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'home_homepage',);
+        }
+
+        // home_homepage_bis
+        if ($pathinfo === '/home') {
+            return array (  '_controller' => 'Imie\\HomeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'home_homepage_bis',);
         }
 
         // workgroups_homepage

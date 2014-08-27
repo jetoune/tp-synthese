@@ -1,3 +1,7 @@
 projects_homepage:
     path:     /projects
-    defaults: { _controller: ProjectsBundle:Default:index }
+    defaults: { _controller: ProjectsBundle:Projects:index }
+
+projects_add:
+    path:     /projects/add
+    defaults: { _controller: ProjectsBundle:Projects:add }
