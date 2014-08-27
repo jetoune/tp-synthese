@@ -1,0 +1,7 @@
+parameters:
+#    roles.example.class: Imie\RolesBundle\Example
+
+services:
+#    roles.example:
+#        class: %roles.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
