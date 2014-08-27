@@ -15,9 +15,15 @@ class skillsRepository extends EntityRepository
 {
 	public function findAll() {
 		return $this->createQueryBuilder('s')
-					//->add('select', 'libelle')
-					//->add('from', 'skills as s')
-					->getQuery()
-					->getResult();
+		//>add('select', 'libelle')
+		//->add('from', 'skills as s')
+		->getQuery()
+		->getResult();
 	}
+
+	/*public function find($id) {
+		return $this->createQueryBuilder('s')
+		->
+		->
+	}*/
 }
