@@ -10,7 +10,8 @@ class ProjectsController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ProjectsBundle:Default:index.html.twig');
+    	$projects = $this->getAllProjectsAction();
+        return $this->render('ProjectsBundle:Default:index.html.twig', array('projects' => $projects));
     }
 
     public function addAction()
@@ -40,5 +41,12 @@ class ProjectsController extends Controller
 	    }
 
         return $this->render('ProjectsBundle:Default:add.html.twig', ['form' =>  $form->createView()]);
+    }
+
+    public function getAllProjectsAction(){
+    	$repo = $this->getDoctrine()
+					->getRepository('ProjectsBundle:Projects');
+
+    	return $skills = $repo->findAll();
     }
 }

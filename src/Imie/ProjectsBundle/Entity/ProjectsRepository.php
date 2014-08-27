@@ -1,6 +1,6 @@
 <?php
 
-namespace Imie\skillsBundle\Entity;
+namespace Imie\ProjectsBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 

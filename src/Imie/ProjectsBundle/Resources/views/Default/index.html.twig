@@ -5,8 +5,8 @@ Liste des projets :
 		{% for project in projects %}
 			<li>
 				<p>{{project.name}}</p>
-				<p>{{project.startDate}}</p>
-				<p>{{project.endDate}}</p>
+				<p>{{project.startDate|date('d/m/Y')}}</p>
+				<p>{{project.endDate|date('d/m/Y')}}</p>
 				<p>{{project.rate}}</p>
 				<p>{{project.description}}</p>
 			</li>
