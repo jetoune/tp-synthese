@@ -680,16 +680,17 @@ class appDevDebugProjectContainer extends Container
         $d = new \Doctrine\Common\Cache\ArrayCache();
         $d->setNamespace('sf2orm_default_60e55138a5fc79dfefa7bc2943fe5b34a6646feeec46a3554212c9308b12f326');
 
-        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\skillsBundle\\Entity', 1 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\WorkgroupsBundle\\Entity', 2 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\ProjectsBundle\\Entity', 3 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\RolesBundle\\Entity'));
+        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\skillsBundle\\Entity', 1 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\WorkgroupsBundle\\Entity', 2 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\ProjectsBundle\\Entity', 3 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\RolesBundle\\Entity', 4 => 'C:\\@dev\\EasyPHP\\data\\localweb\\projects\\tp-synthese\\src\\Imie\\UsersBundle\\Entity'));
 
         $f = new \Doctrine\ORM\Mapping\Driver\DriverChain();
         $f->addDriver($e, 'Imie\\skillsBundle\\Entity');
         $f->addDriver($e, 'Imie\\WorkgroupsBundle\\Entity');
         $f->addDriver($e, 'Imie\\ProjectsBundle\\Entity');
         $f->addDriver($e, 'Imie\\RolesBundle\\Entity');
+        $f->addDriver($e, 'Imie\\UsersBundle\\Entity');
 
         $g = new \Doctrine\ORM\Configuration();
-        $g->setEntityNamespaces(array('ImieskillsBundle' => 'Imie\\skillsBundle\\Entity', 'WorkgroupsBundle' => 'Imie\\WorkgroupsBundle\\Entity', 'ProjectsBundle' => 'Imie\\ProjectsBundle\\Entity', 'RolesBundle' => 'Imie\\RolesBundle\\Entity'));
+        $g->setEntityNamespaces(array('ImieskillsBundle' => 'Imie\\skillsBundle\\Entity', 'WorkgroupsBundle' => 'Imie\\WorkgroupsBundle\\Entity', 'ProjectsBundle' => 'Imie\\ProjectsBundle\\Entity', 'RolesBundle' => 'Imie\\RolesBundle\\Entity', 'UsersBundle' => 'Imie\\UsersBundle\\Entity'));
         $g->setMetadataCacheImpl($b);
         $g->setQueryCacheImpl($c);
         $g->setResultCacheImpl($d);

@@ -2366,6 +2366,7 @@
               <argument key="WorkgroupsBundle">Imie\WorkgroupsBundle\Entity</argument>
               <argument key="ProjectsBundle">Imie\ProjectsBundle\Entity</argument>
               <argument key="RolesBundle">Imie\RolesBundle\Entity</argument>
+              <argument key="UsersBundle">Imie\UsersBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -2407,6 +2408,7 @@
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\WorkgroupsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\ProjectsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\RolesBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\UsersBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -2421,6 +2423,7 @@
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\WorkgroupsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\ProjectsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\RolesBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\UsersBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -2435,6 +2438,7 @@
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\WorkgroupsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\ProjectsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\RolesBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\UsersBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -2449,10 +2453,26 @@
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\WorkgroupsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\ProjectsBundle\Entity</argument>
                         <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\RolesBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\UsersBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>Imie\RolesBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\skillsBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\WorkgroupsBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\ProjectsBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\RolesBundle\Entity</argument>
+                        <argument>C:\@dev\EasyPHP\data\localweb\projects\tp-synthese\src\Imie\UsersBundle\Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Imie\UsersBundle\Entity</argument>
                 </call>
               </service>
             </argument>
