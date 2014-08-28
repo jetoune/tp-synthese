@@ -4,7 +4,7 @@ Liste des projets :
 	<ul>
 		{% for project in projects %}
 			<li>
-				<p>{{project.name}}</p>
+				<p><a href="project/{{project.idProjects}}">{{project.name}}</a></p>
 				<p>{{project.startDate|date('d/m/Y')}}</p>
 				<p>{{project.endDate|date('d/m/Y')}}</p>
 				<p>{{project.rate}}</p>
@@ -14,3 +14,5 @@ Liste des projets :
 		{% endfor %}
 	</ul>
 {% endif %}
+
+<a href="projects/add">Ajouter un projet</a>

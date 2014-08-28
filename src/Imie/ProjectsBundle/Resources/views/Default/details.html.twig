@@ -1,0 +1,9 @@
+Projet :
+
+{% if  projects %}
+	<p>Nom du projet : {{projects.name}}</p>
+	<p>Date de début du projet : {{projects.startDate|date('d/m/Y')}}</p>
+	<p>Date de fin du projet : {{projects.endDate|date('d/m/Y')}}</p>
+	<p>Note : {{projects.rate}}</p>
+	<p>Description du projet : {{projects.description}}</p>
+{% endif %}

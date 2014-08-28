@@ -1,3 +1,7 @@
 workgroups_homepage:
     path:     /workgroups
     defaults: { _controller: WorkgroupsBundle:Workgroups:index }
+
+workgroups_add:
+    path:    /workgroups/add
+    defaults: { _controller: WorkgroupsBundle:Workgroups:add }
