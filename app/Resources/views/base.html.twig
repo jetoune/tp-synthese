@@ -3,11 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <!-- css -->
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Imie/css/header.css') }}">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        
+
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <!-- header -->
+        <div id="header">
+            <!-- logo -->
+            <div id="logo">
+                
+            </div> 
+            
+
+            <!-- title --> 
+            <div id="projectTitle">
+                Projet l'IMIE
+            </div>
+            <!-- user's space -->
+
+            
+                <div id="userSpace">
+                    <div>Prénom Nom</div>
+                    <div id="buttonList">
+                        <div>Notification</div>
+                        <div>Profil</div>
+                        <div>Deconnexion</div>
+                    </div>
+                    
+                </div>
+        </div>
+        <div id="content">
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

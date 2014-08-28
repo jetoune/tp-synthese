@@ -1,0 +1,40 @@
+body{
+	max-width: 960px;
+	min-width: 320px;
+	margin: 0 auto;
+	background-image: url('../images/background.png');
+}
+
+#header{
+	
+}
+
+#logo{
+	background-image: url('../images/logo-imie.png');
+	background-repeat: no-repeat;
+	height: 86px;
+	width: 184px;
+	display: inline-block;
+}
+
+#projectTitle{
+	display: inline;
+	margin-left: 20%;
+	font-size: 30px;
+	font-family: arial;
+	color: blue;
+}
+
+#userSpace{
+	width: 250px;
+	display: inline;
+	text-align: right;
+	float: right;
+	margin-right: 2%;
+}
+
+#buttonList div{
+	display: inline;
+	margin-left: 5%;
+}
+
