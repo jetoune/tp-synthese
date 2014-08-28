@@ -1,3 +1,23 @@
+* {	box-sizing: border-box;}
+
+#content {margin-top: 10px;}
+
+#main-container {width:75%; margin: 10px; float: left;}
+
+#main-container #current {min-height: 200px; width: 100%; background-color: red; float: left; }
+
+#main-container #potential {min-height: 200px; width: 48%; background-color: red; float: left;margin-top: 20px;}
+
+#main-container #news {min-height: 200px; width: 48%; background-color: red; float: right;margin-top: 20px;}
+
+
+#sidebar {width: 22%; margin-top: 10px; float: right; }
+
+#sidebar #searchMenu {	padding: 10px; }
+
+#sidebar #rightMenu {padding: 10px; margin-top: 20px; }
+
+
 /* 
 .___  ___.   ______   .______    __   __       _______ 
 |   \/   |  /  __  \  |   _  \  |  | |  |     |   ____|
@@ -9,21 +29,21 @@
 */
 
 
-@media screen and (max-width: 320px) {
-  .bloc {
-    display:block;
-    clear:both;
+@media screen and (max-width: 450px) {
+  #main-container {
   }
+
+  #sidebar {
+  	display: none;
+  }
+
+#main-container #potential { width: 100%;}
+#main-container #news { width: 100%;}
+
 }
 
 
 
-@media screen and (max-width: 640px) {
-  .bloc {
-    display:block;
-    clear:both;
-  }
-}
 
 
 
@@ -36,3 +56,12 @@
     |__|    /__/     \__\ |______/  |_______||_______|    |__|        |__|     |_______|
                                                                                         
 */
+
+
+@media screen and (max-width: 730px) {
+  #main-container {
+  	width: 100%;
+  	
+  }
+
+}
