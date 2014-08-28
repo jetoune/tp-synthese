@@ -34,6 +34,23 @@
             </div>
             <div id="content">
                 {% block body %}{% endblock %}
+                <div id ="searchMenu">
+                    <p>Outils de recherche</p>
+                    
+                    <label for="keywords">Mots clés :</label>
+                    <input id="keywords" type="text"></div>
+
+                </div>
+
+                <div id ="rightMenu">
+                    <ul id ="rightMenuList">
+                        <li><a href="#">Les étudiants</a></li>
+                        <li><a href="#">Les projets</a></li>
+                        <li><a href="#">Listes des compétences</a></li>
+                        <li><a href="#">Mon profil</a></li>
+                        <li><a href="#">Administration</a></li>
+                    </ul>
+                </div>                
             </div>
             <!-- footer -->
             <div id="footer">
@@ -41,28 +58,5 @@
             </div>
             {% block javascripts %}{% endblock %}
         </div>
-
-        <div id="content">
-            {% block body %}{% endblock %}
-            
-            <div id ="searchMenu">
-                <p>Outils de recherche</p>
-                
-                <label for="keywords">Mots clés :</label>
-                <input id="keywords" type="text"></div>
-
-            </div>
-
-            <div id ="rightMenu">
-                <ul id ="rightMenuList">
-                    <li><a href="#">Les étudiants</a></li>
-                    <li><a href="#">Les projets</a></li>
-                    <li><a href="#">Listes des compétences</a></li>
-                    <li><a href="#">Mon profil</a></li>
-                    <li><a href="#">Administration</a></li>
-                </ul>
-            </div>
-        </div>
-        {% block javascripts %}{% endblock %}
     </body>
 </html>
