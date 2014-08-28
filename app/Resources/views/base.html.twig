@@ -15,7 +15,7 @@
             <!-- header -->
             <div id="header">
                 <!-- logo -->
-                <div id="logo"></div> 
+                <a href="{{ path('home_homepage') }}"><div id="logo"></div></a>
                 <!-- title --> 
                 <div id="projectTitle">
                     Projets de l'I.M.I.E.
@@ -47,8 +47,8 @@
                         <p>Menu</p>
                         <ul id ="rightMenuList">
                             <li><a href="#">Les étudiants</a></li>
-                            <li><a href="projects">Les projets</a></li>
-                            <li><a href="skills">Listes des compétences</a></li>
+                            <li><a href="{{ path('projects_homepage') }}">Les projets</a></li>
+                            <li><a href="{{ path('imieskills_skills_list') }}">Listes des compétences</a></li>
                             <li><a href="#">Mon profil</a></li>
                             <li><a href="#">Administration</a></li>
                         </ul>
