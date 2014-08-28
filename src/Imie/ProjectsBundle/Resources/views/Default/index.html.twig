@@ -1,3 +1,7 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
 Liste des projets :
 
 {% if  projects %}
@@ -5,10 +9,6 @@ Liste des projets :
 		{% for project in projects %}
 			<li>
 				<p><a href="project/{{project.idProjects}}">{{project.name}}</a></p>
-				<p>{{project.startDate|date('d/m/Y')}}</p>
-				<p>{{project.endDate|date('d/m/Y')}}</p>
-				<p>{{project.rate}}</p>
-				<p>{{project.description}}</p>
 			</li>
 			
 		{% endfor %}
@@ -16,3 +16,4 @@ Liste des projets :
 {% endif %}
 
 <a href="projects/add">Ajouter un projet</a>
+{% endblock %}

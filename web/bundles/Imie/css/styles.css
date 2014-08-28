@@ -7,8 +7,9 @@ body{
 
 /* STYLE FOR THE HEADER */
 
-#header{
-	
+#container{
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
 #logo{

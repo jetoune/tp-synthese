@@ -1,4 +1,8 @@
-Listes des compétences...
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+Listes des compétences : 
 
 {% if  skills %}
 	<ul>
@@ -9,3 +13,5 @@ Listes des compétences...
 {% endif %}
 
 <a href="skills/add">Ajouter une compétence</a>
+
+{% endblock %}
