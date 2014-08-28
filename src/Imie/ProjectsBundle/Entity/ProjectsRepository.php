@@ -21,9 +21,12 @@ class ProjectsRepository extends EntityRepository
 		->getResult();
 	}
 
-	/*public function find($id) {
-		return $this->createQueryBuilder('s')
-		->
-		->
+
+/*	public function find($id) {
+		return $this->createQueryBuilder('p')
+		//>add('select', 'libelle')
+		//->add('from', 'skills as s')
+		->getQuery()
+		->getResult();
 	}*/
 }

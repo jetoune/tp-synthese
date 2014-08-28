@@ -52,4 +52,13 @@ class ProjectsController extends Controller
 		//Dans la variable projects, on récupère nos valeurs (Tous les détails d'un projet)
     	return $projects = $repo->findAll();
     }
+
+    public function getProjectByIDAction($id){
+    	$repo = $this->getDoctrine()
+        			//->getManager()
+        			->getRepository('ProjectsBundle:Projects');
+        $projects = $repo->find($id);
+
+        return $this->render('ProjectsBundle:Default:details.html.twig', array('projects' => $projects));
+    }
 }
