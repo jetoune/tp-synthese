@@ -3,6 +3,7 @@
 namespace Imie\UsersBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Users
@@ -10,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Imie\UsersBundle\Entity\UsersRepository")
  */
-class Users
+class Users implements UserInterface
 {
 
     /**
@@ -392,4 +393,47 @@ class Users
     {
         return $this->passwordChanges;
     }
+
+
+  public function setSalt($salt)
+  {
+    $this->salt = $salt;
+    return $this;
+  }
+
+  public function getSalt()
+  {
+    return '';
+  }
+
+  public function setRoles(array $roles)
+  {
+    $this->rolesIdRoles = $roles;
+    return $this;
+  }
+
+  public function getRoles()
+  {
+    $allRoles = [
+        1 => 'ROLE_SUPER_ADMIN',
+        2 => 'ROLE_ADMIN',
+        2 => 'ROLE_USER',
+        ];
+    return [$allRoles[$this->rolesIdRoles]];
+  }
+
+  public function eraseCredentials()
+  {
+  }
+
+  public function setUsername($username)
+  {
+    $this->username = $username;
+    return $this;
+  }
+
+  public function getUsername()
+  {
+    return $this->getFirstname().' '.$this->getLastname();
+  }
 }

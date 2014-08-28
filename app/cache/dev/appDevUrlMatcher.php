@@ -148,15 +148,23 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/projects')) {
-            // projects_homepage
-            if ($pathinfo === '/projects') {
-                return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\ProjectsController::indexAction',  '_route' => 'projects_homepage',);
+        if (0 === strpos($pathinfo, '/project')) {
+            if (0 === strpos($pathinfo, '/projects')) {
+                // projects_homepage
+                if ($pathinfo === '/projects') {
+                    return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\ProjectsController::indexAction',  '_route' => 'projects_homepage',);
+                }
+
+                // projects_add
+                if ($pathinfo === '/projects/add') {
+                    return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\ProjectsController::addAction',  '_route' => 'projects_add',);
+                }
+
             }
 
-            // projects_add
-            if ($pathinfo === '/projects/add') {
-                return array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\ProjectsController::addAction',  '_route' => 'projects_add',);
+            // projects_one_project
+            if (preg_match('#^/project/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'projects_one_project')), array (  '_controller' => 'Imie\\ProjectsBundle\\Controller\\ProjectsController::getProjectByIDAction',));
             }
 
         }
@@ -175,20 +183,46 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Imie\\HomeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'home_homepage_bis',);
         }
 
+        // home_homepage_admin
+        if ($pathinfo === '/admin') {
+            return array (  '_controller' => 'Imie\\HomeBundle\\Controller\\DefaultController::AdminAction',  '_route' => 'home_homepage_admin',);
+        }
+
         // workgroups_homepage
         if ($pathinfo === '/workgroups') {
             return array (  '_controller' => 'Imie\\WorkgroupsBundle\\Controller\\WorkgroupsController::indexAction',  '_route' => 'workgroups_homepage',);
         }
 
         if (0 === strpos($pathinfo, '/skills')) {
-            // imieskills_skills
-            if (preg_match('#^/skills/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'imieskills_skills')), array (  '_controller' => 'Imie\\skillsBundle\\Controller\\SkillsController::indexAction',));
-            }
-
             // imieskills_skills_list
             if ($pathinfo === '/skills') {
                 return array (  '_controller' => 'Imie\\skillsBundle\\Controller\\SkillsController::indexAction',  '_route' => 'imieskills_skills_list',);
+            }
+
+            // imieskills_skills_add
+            if ($pathinfo === '/skills/add') {
+                return array (  '_controller' => 'Imie\\skillsBundle\\Controller\\SkillsController::addAction',  '_route' => 'imieskills_skills_add',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/log')) {
+            if (0 === strpos($pathinfo, '/login')) {
+                // login
+                if ($pathinfo === '/login') {
+                    return array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::loginAction',  '_route' => 'login',);
+                }
+
+                // login_check
+                if ($pathinfo === '/login_check') {
+                    return array('_route' => 'login_check');
+                }
+
+            }
+
+            // logout
+            if ($pathinfo === '/logout') {
+                return array('_route' => 'logout');
             }
 
         }

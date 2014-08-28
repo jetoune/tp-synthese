@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Projects
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Imie\ProjectsBundle\Entity\ProjectsRepository")
  */
 class Projects
 {

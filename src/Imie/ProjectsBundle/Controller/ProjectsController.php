@@ -10,7 +10,10 @@ class ProjectsController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ProjectsBundle:Default:index.html.twig');
+    	//On définit une variable projects qui sera surchargée
+        //Elle contiendra les résultats des requêtes
+    	$projects = $this->getAllProjectsAction();
+        return $this->render('ProjectsBundle:Default:index.html.twig', array('projects' => $projects));
     }
 
     public function addAction()
@@ -40,5 +43,22 @@ class ProjectsController extends Controller
 	    }
 
         return $this->render('ProjectsBundle:Default:add.html.twig', ['form' =>  $form->createView()]);
+    }
+
+    public function getAllProjectsAction(){
+    	//On met l'accès au repo dans une variable
+    	$repo = $this->getDoctrine()
+					->getRepository('ProjectsBundle:Projects');
+		//Dans la variable projects, on récupère nos valeurs (Tous les détails d'un projet)
+    	return $projects = $repo->findAll();
+    }
+
+    public function getProjectByIDAction($id){
+    	$repo = $this->getDoctrine()
+        			//->getManager()
+        			->getRepository('ProjectsBundle:Projects');
+        $projects = $repo->find($id);
+
+        return $this->render('ProjectsBundle:Default:details.html.twig', array('projects' => $projects));
     }
 }

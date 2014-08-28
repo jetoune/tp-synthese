@@ -22,3 +22,12 @@ imieskills:
     resource: "@ImieskillsBundle/Resources/config/routing.yml"
     prefix:   /
 
+login:
+    pattern:   /login
+    defaults:  { _controller: UsersBundle:Default:login }
+
+login_check:
+    pattern:   /login_check
+
+logout:
+    pattern:   /logout

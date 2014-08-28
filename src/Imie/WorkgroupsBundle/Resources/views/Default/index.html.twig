@@ -1,1 +1,11 @@
 Liste des groupes de travail ou autre chose ...
+
+{% if  workgroups %}
+	<ul>
+		{% for workgroup in workgroups %}
+			<li>{{workgroup.libelle}}</li>
+		{% endfor %}
+	</ul>
+{% endif %}
+
+<a href="workgroups/add">Ajouter un groupe de travail</a>

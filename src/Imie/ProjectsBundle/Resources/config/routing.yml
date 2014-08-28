@@ -5,3 +5,7 @@ projects_homepage:
 projects_add:
     path:     /projects/add
     defaults: { _controller: ProjectsBundle:Projects:add }
+
+projects_one_project:
+    path:	/project/{id}
+    defaults: { _controller: ProjectsBundle:Projects:getProjectByID}
