@@ -1,0 +1,58 @@
+body{
+	max-width: 960px;
+	min-width: 320px;
+	margin: 0 auto;
+	background-image: url('../images/background.png');
+}
+
+/* STYLE FOR THE HEADER */
+
+#header{
+	
+}
+
+#logo{
+	background-image: url('../images/logo-imie.png');
+	background-repeat: no-repeat;
+	height: 86px;
+	width: 184px;
+	display: inline-block;
+}
+
+#projectTitle{
+	display: inline;
+	margin-left: 20%;
+	font-size: 30px;
+	font-family: arial;
+	color: #47BBBC;
+}
+
+#userSpace{
+	width: 250px;
+	display: inline;
+	text-align: right;
+	float: right;
+	margin-right: 2%;
+}
+
+#buttonList div{
+	display: inline;
+	margin-left: 5%;
+}
+
+/* END STYLE FOR THE HEADER */
+
+
+/* STYLE FOR THE RIGHT MENU */
+
+#searchMenu {
+background-color: #FDB515;
+}
+
+#rightMenu {
+	background-color: #49B9BD;
+}
+
+#rightMenuList {
+	list-style: none;
+}

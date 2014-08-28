@@ -188,9 +188,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Imie\\HomeBundle\\Controller\\DefaultController::AdminAction',  '_route' => 'home_homepage_admin',);
         }
 
-        // workgroups_homepage
-        if ($pathinfo === '/workgroups') {
-            return array (  '_controller' => 'Imie\\WorkgroupsBundle\\Controller\\WorkgroupsController::indexAction',  '_route' => 'workgroups_homepage',);
+        if (0 === strpos($pathinfo, '/workgroups')) {
+            // workgroups_homepage
+            if ($pathinfo === '/workgroups') {
+                return array (  '_controller' => 'Imie\\WorkgroupsBundle\\Controller\\WorkgroupsController::indexAction',  '_route' => 'workgroups_homepage',);
+            }
+
+            // workgroups_add
+            if ($pathinfo === '/workgroups/add') {
+                return array (  '_controller' => 'Imie\\WorkgroupsBundle\\Controller\\WorkgroupsController::addAction',  '_route' => 'workgroups_add',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/skills')) {
