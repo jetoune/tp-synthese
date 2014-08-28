@@ -5,3 +5,7 @@ home_homepage:
 home_homepage_bis:
     path:     /home
     defaults: { _controller: HomeBundle:Default:index }
+
+home_homepage_admin:
+    path:     /admin
+    defaults: { _controller: HomeBundle:Default:Admin }
