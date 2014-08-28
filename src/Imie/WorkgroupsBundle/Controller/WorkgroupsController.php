@@ -47,8 +47,8 @@ class WorkgroupsController extends Controller
     	//On met l'accès au repo dans une variable
     	$repo = $this->getDoctrine()
 					->getRepository('WorkgroupsBundle:Workgroups');
-		//Dans la variable projects, on récupère nos valeurs (Tous les détails d'un projet)
-    	return $projects = $repo->findAll();
+		//Dans la variable workgroups, on récupère nos valeurs (Tous les workgroups)
+    	return $workgroups = $repo->findAll();
     }
 
 }
