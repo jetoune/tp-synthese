@@ -33,9 +33,6 @@
   #main-container {
   }
 
-  #sidebar {
-  	display: none;
-  }
 
 #main-container #potential { width: 100%;}
 #main-container #news { width: 100%;}
@@ -59,9 +56,15 @@
 
 
 @media screen and (max-width: 730px) {
-  #main-container {
+  #main-container, #sidebar {
   	width: 100%;
-  	
   }
 
+  #projectTitle {display: inline-block;margin-left: 20px;margin-top: -50px}
+
+  #userSpace {width: 140px;display: inline-block;}
+
+  #searchMenu {width: 48%;margin-left: 10px;}
+
+  #rightMenu {display: none; }
 }
