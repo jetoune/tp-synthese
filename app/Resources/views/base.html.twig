@@ -6,11 +6,9 @@
         {% block stylesheets %}
             <!-- css -->
             <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Imie/css/styles.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/Imie/css/responsive.css') }}">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-
-        
-
     </head>
     <body>
     <div id="container">
@@ -33,24 +31,28 @@
                 </div>
             </div>
             <div id="content">
-                {% block body %}{% endblock %}
-                <div id ="searchMenu">
-                    <p>Outils de recherche</p>
-                    
-                    <label for="keywords">Mots clés :</label>
-                    <input id="keywords" type="text"></div>
-
+                <div id="main-container">
+                    {% block body %}{% endblock %}
                 </div>
-
-                <div id ="rightMenu">
-                    <ul id ="rightMenuList">
-                        <li><a href="#">Les étudiants</a></li>
-                        <li><a href="projects">Les projets</a></li>
-                        <li><a href="skills">Listes des compétences</a></li>
-                        <li><a href="#">Mon profil</a></li>
-                        <li><a href="#">Administration</a></li>
-                    </ul>
-                </div>                
+                <div id="sidebar">
+                    <div id ="searchMenu">
+                        <p>Outils de recherche</p>
+                        
+                        <label for="keywords">Mots clés :</label>
+                        <input id="keywords" type="text">
+    
+                    </div>
+    
+                    <div id ="rightMenu">
+                        <ul id ="rightMenuList">
+                            <li><a href="#">Les étudiants</a></li>
+                            <li><a href="projects">Les projets</a></li>
+                            <li><a href="skills">Listes des compétences</a></li>
+                            <li><a href="#">Mon profil</a></li>
+                            <li><a href="#">Administration</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- footer -->
             <div id="footer">

@@ -1,0 +1,1 @@
+ALTER TABLE  `users` CHANGE  `roles_id_roles`  `roles_id_roles` SMALLINT( 6 ) NOT NULL DEFAULT  '3';
