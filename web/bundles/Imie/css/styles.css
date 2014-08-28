@@ -5,6 +5,8 @@ body{
 	background-image: url('../images/background.png');
 }
 
+/* STYLE FOR THE HEADER */
+
 #header{
 	
 }
@@ -38,3 +40,19 @@ body{
 	margin-left: 5%;
 }
 
+/* END STYLE FOR THE HEADER */
+
+
+/* STYLE FOR THE RIGHT MENU */
+
+#searchMenu {
+background-color: #FDB515;
+}
+
+#rightMenu {
+	background-color: #49B9BD;
+}
+
+#rightMenuList {
+	list-style: none;
+}
