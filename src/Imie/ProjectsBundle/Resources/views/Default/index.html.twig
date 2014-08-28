@@ -8,12 +8,14 @@ Liste des projets :
 	<ul>
 		{% for project in projects %}
 			<li>
-				<p><a href="project/{{project.idProjects}}">{{project.name}}</a></p>
+				<p><a href="{{ path('projects_one_project', {'id': project.idProjects} ) }}">{{project.name}}</a></p>
 			</li>
 			
 		{% endfor %}
 	</ul>
 {% endif %}
 
-<a href="projects/add">Ajouter un projet</a>
+<a href="{{ path('projects_add') }}">Ajouter un projet</a>
 {% endblock %}
+
+
