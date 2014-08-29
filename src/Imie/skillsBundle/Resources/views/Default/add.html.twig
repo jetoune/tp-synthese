@@ -1,10 +1,28 @@
 {% extends "::base.html.twig" %}
 
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/Imie/css/form.css') }}">
+{% endblock %}
+
 {% block body %}
+<div id="titleForm">
+	Demande d'ajout d'une compétence :
+</div>
 
-Ajouter une compétence :
+{{ form_start(form) }}
+    {{ form_errors(form) }}
 
+    <div class="space">
+    <div>
+    	{{ form_label(form.libelle, 'Nom de la compétence : ') }}
+    </div>
+        {{ form_errors(form.libelle) }}
+        {{ form_widget(form.libelle,  { 'attr': {'placeholder': 'Compétence...'} }) }}
+    </div>
+    <div class="space">
+        {{ form_widget(form.save, { 'label': 'Soumettre' } ) }}
+    </div>
 
-{{ form(form) }}
-
+{{ form_end(form) }}
 {% endblock %}

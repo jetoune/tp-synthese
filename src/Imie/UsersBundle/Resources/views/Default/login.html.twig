@@ -2,14 +2,15 @@
 
 {% block body %}
 
-Se connecter
-
   {# S'il y a une erreur, on l'affiche dans un joli cadre #}
   {% if error %}
     <div class="alert alert-error">{{ error.message }}</div>
   {% endif %}
 
   <form id="login-form" action="{{ path('login_check') }}" method="post">
+
+    <div id="logo" class="login"></div>
+
     <div>
       <label for="username">Login :</label>
       <input type="text" id="username" name="_username" value="{{ last_username   }}" />

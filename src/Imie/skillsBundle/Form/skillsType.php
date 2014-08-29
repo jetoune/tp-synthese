@@ -17,8 +17,8 @@ class skillsType extends AbstractType
         $builder
             ->add('libelle')
             ->add('save', 'submit', array(
-                    'attr' => array('class' => 'save'),
-                ))
+                    'attr' => array('class' => 'save',),
+                    ))
         ;
     }
     

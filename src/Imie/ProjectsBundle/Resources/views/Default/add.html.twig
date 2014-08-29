@@ -1,7 +1,46 @@
 {% extends "::base.html.twig" %}
 
-{% block body %}
-Formulaire d'ajout 
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/Imie/css/form.css') }}">
+{% endblock %}
 
-{{ form(form) }}
+{% block body %}
+<div id="titleForm">
+	Demande de création de projet :
+</div>
+
+{{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    <div class="space">
+    <div>
+    	{{ form_label(form.name, 'Nom du projet : ') }}
+    </div>
+        {{ form_errors(form.name) }}
+        {{ form_widget(form.name,  { 'attr': {'placeholder': 'Votre nom de projet...'} }) }}
+    </div>
+    <div class="space">
+        {{ form_label(form.startDate, 'Date de début : ') }}
+        {{ form_errors(form.startDate) }}
+        {{ form_widget(form.startDate) }}
+    </div>
+    <div class="space">
+        {{ form_label(form.endDate, 'Date de fin : ') }}
+        {{ form_errors(form.endDate) }}
+        {{ form_widget(form.endDate) }}
+    </div>
+    <div class="space">
+        {{ form_label(form.description, 'Description : ') }}
+        <div>
+        	{{ form_errors(form.description) }}
+       		{{ form_widget(form.description, { 'attr': {'placeholder': 'Décrivez votre projet...'} }) }}
+        </div>
+        
+    </div>
+    <div class="space">
+        {{ form_widget(form.save, { 'label': 'Soumettre' }) }}
+    </div>
+
+{{ form_end(form) }}
 {% endblock %}
