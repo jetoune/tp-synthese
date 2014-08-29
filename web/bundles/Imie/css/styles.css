@@ -182,3 +182,6 @@ body{
 #logo.login {
     margin-bottom: 30px;
 }
+
+#login-form div label {
+display: block;
