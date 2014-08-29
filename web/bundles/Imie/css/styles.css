@@ -172,3 +172,8 @@ body{
 #rightMenuList {
 	list-style: none;
 }
+
+#login-form {
+	width: 50%;
+	margin-left: auto;
+}
