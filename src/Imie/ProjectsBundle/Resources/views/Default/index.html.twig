@@ -1,11 +1,16 @@
 {% extends "::base.html.twig" %}
 
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/Imie/css/project.css') }}">
+{% endblock %}
+
 {% block body %}
 
 Liste des projets :
 
 {% if  projects %}
-	<ul>
+	<ul class="list">
 		{% for project in projects %}
 			<li>
 				<p><a href="{{ path('projects_one_project', {'id': project.idProjects} ) }}">{{project.name}}</a></p>
