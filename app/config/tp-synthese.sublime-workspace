@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
 				"roles",
 				"rolesIdRoles"
 			],
@@ -24,51 +36,10 @@
 	"buffers":
 	[
 		{
-			"file": "routing.yml",
+			"file": "/C/wamp/www/tp-synthese/web/bundles/Imie/css/responsive.css",
 			"settings":
 			{
-				"buffer_size": 676,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Resources/views/Default/login.html.twig",
-			"settings":
-			{
-				"buffer_size": 558,
-				"line_ending": "Windows",
-				"name": "login"
-			}
-		},
-		{
-			"file": "/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Controller/DefaultController.php",
-			"settings":
-			{
-				"buffer_size": 1360,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Entity/Users.php",
-			"settings":
-			{
-				"buffer_size": 7261,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Controller/DefaultController.php",
-			"settings":
-			{
-				"buffer_size": 381,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Resources/config/routing.yml",
-			"settings":
-			{
-				"buffer_size": 282,
+				"buffer_size": 2105,
 				"line_ending": "Windows"
 			}
 		},
@@ -76,34 +47,41 @@
 			"file": "/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Resources/views/Default/index.html.twig",
 			"settings":
 			{
-				"buffer_size": 39,
+				"buffer_size": 146,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "security.yml",
+			"file": "/C/wamp/www/tp-synthese/app/Resources/views/base.html.twig",
 			"settings":
 			{
-				"buffer_size": 1532,
+				"buffer_size": 2505,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 7142 files for \"UserInterface\" (case sensitive)\n\nC:\\wamp\\www\\tp-synthese\\app\\cache\\dev\\classes.php:\n 2542  {\n 2543  public function loadUserByUsername($username);\n 2544: public function refreshUser(UserInterface $user);\n 2545  public function supportsClass($class);\n 2546  }\n\nC:\\wamp\\www\\tp-synthese\\app\\cache\\dev\\profiler\\9e\\ce\\88ce9e:\n    <binary>\n\nC:\\wamp\\www\\tp-synthese\\app\\cache\\dev\\profiler\\b0\\d4\\4ed4b0:\n    <binary>\n\nC:\\wamp\\www\\tp-synthese\\app\\cache\\prod\\classes.php:\n 2512  {\n 2513  public function loadUserByUsername($username);\n 2514: public function refreshUser(UserInterface $user);\n 2515  public function supportsClass($class);\n 2516  }\n\nC:\\wamp\\www\\tp-synthese\\app\\logs\\dev.log:\n 5429  [2014-08-28 10:11:40] security.NOTICE: It is recommended that you enable the \"openssl\" extension for random number generation. [] []\n 5430  [2014-08-28 10:11:40] request.INFO: Matched route \"home_homepage\" (parameters: \"_controller\": \"Imie\\HomeBundle\\Controller\\DefaultController::indexAction\", \"_route\": \"home_homepage\") [] []\n 5431: [2014-08-28 10:11:40] emergency.EMERGENCY: Interface 'Imie\\UsersBundle\\Entity\\UserInterface' not found {\"type\":1,\"file\":\"C:\\\\wamp\\\\www\\\\tp-synthese\\\\src\\\\Imie\\\\UsersBundle\\\\Entity\\\\Users.php\",\"line\":14} []\n 5432: [2014-08-28 10:11:44] request.CRITICAL: Uncaught PHP Exception Symfony\\Component\\Debug\\Exception\\ClassNotFoundException: \"Attempted to load interface \"UserInterface\" from namespace \"Imie\\UsersBundle\\Entity\" in C:\\wamp\\www\\tp-synthese\\src\\Imie\\UsersBundle\\Entity\\Users.php line 14. Do you need to \"use\" it from another namespace? Perhaps you need to add a use statement for one of the following: Symfony\\Component\\Security\\Core\\User\\UserInterface.\" at C:\\wamp\\www\\tp-synthese\\src\\Imie\\UsersBundle\\Entity\\Users.php line 14 {\"exception\":\"[object] (Symfony\\\\Component\\\\Debug\\\\Exception\\\\ClassNotFoundException: Attempted to load interface \\\"UserInterface\\\" from namespace \\\"Imie\\\\UsersBundle\\\\Entity\\\" in C:\\\\wamp\\\\www\\\\tp-synthese\\\\src\\\\Imie\\\\UsersBundle\\\\Entity\\\\Users.php line 14. Do you need to \\\"use\\\" it from another namespace? Perhaps you need to add a use statement for one of the following: Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface. at C:\\\\wamp\\\\www\\\\tp-synthese\\\\src\\\\Imie\\\\UsersBundle\\\\Entity\\\\Users.php:14)\"} []\n 5433  [2014-08-28 10:11:44] event.DEBUG: Notified event \"kernel.request\" to listener \"Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener::__invoke\". [] []\n 5434  [2014-08-28 10:11:44] event.DEBUG: Notified event \"kernel.request\" to listener \"Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener::__invoke\". [] []\n\nC:\\wamp\\www\\tp-synthese\\src\\Imie\\UsersBundle\\Entity\\Users.php:\n   11   * @ORM\\Entity(repositoryClass=\"Imie\\UsersBundle\\Entity\\UsersRepository\")\n   12   */\n   13: class Users implements UserInterface\n   14  {\n   15  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Bridge\\Doctrine\\Security\\User\\EntityUserProvider.php:\n   16  use Symfony\\Component\\Security\\Core\\Exception\\UsernameNotFoundException;\n   17  use Symfony\\Component\\Security\\Core\\User\\UserProviderInterface;\n   18: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   19  \n   20  /**\n   ..\n   72       * {@inheritdoc}\n   73       */\n   74:     public function refreshUser(UserInterface $user)\n   75      {\n   76          if (!$user instanceof $this->class) {\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\User.php:\n   15  use Doctrine\\ORM\\Mapping\\Column;\n   16  use Doctrine\\ORM\\Mapping\\Entity;\n   17: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   18  \n   19  /** @Entity */\n   20: class User implements UserInterface\n   21  {\n   22      /** @Id @Column(type=\"integer\") */\n   ..\n   57      }\n   58  \n   59:     public function equals(UserInterface $user)\n   60      {\n   61      }\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Bridge\\Propel1\\Security\\User\\PropelUserProvider.php:\n   12  namespace Symfony\\Bridge\\Propel1\\Security\\User;\n   13  \n   14: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   15  use Symfony\\Component\\Security\\Core\\User\\UserProviderInterface;\n   16  use Symfony\\Component\\Security\\Core\\Exception\\UsernameNotFoundException;\n   ..\n   83       * {@inheritdoc}\n   84       */\n   85:     public function refreshUser(UserInterface $user)\n   86      {\n   87          if (!$user instanceof $this->class) {\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\SecurityBundle\\CHANGELOG.md:\n   65      ```\n   66  \n   67:  * [BC BREAK] Method `equals` was removed from `UserInterface` to its own new\n   68     `EquatableInterface`. The user class can now implement this interface to override\n   69     the default implementation of users equality test.\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Acl\\Domain\\UserSecurityIdentity.php:\n   13  \n   14  use Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface;\n   15: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   16  use Symfony\\Component\\Security\\Core\\Util\\ClassUtils;\n   17  use Symfony\\Component\\Security\\Acl\\Model\\SecurityIdentityInterface;\n   ..\n   49  \n   50      /**\n   51:      * Creates a user security identity from a UserInterface\n   52       *\n   53:      * @param UserInterface $user\n   54       * @return UserSecurityIdentity\n   55       */\n   56:     public static function fromAccount(UserInterface $user)\n   57      {\n   58          return new self($user->getUsername(), ClassUtils::getRealClass($user));\n   ..\n   69          $user = $token->getUser();\n   70  \n   71:         if ($user instanceof UserInterface) {\n   72              return self::fromAccount($user);\n   73          }\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Acl\\Tests\\Domain\\SecurityIdentityRetrievalStrategyTest.php:\n  110      protected function getAccount($username, $class)\n  111      {\n  112:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface', array(), array(), $class);\n  113          $account\n  114              ->expects($this->any())\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Acl\\Tests\\Domain\\UserSecurityIdentityTest.php:\n   44      public function getCompareData()\n   45      {\n   46:         $account = $this->getMockBuilder('Symfony\\Component\\Security\\Core\\User\\UserInterface')\n   47                              ->setMockClassName('USI_AccountImpl')\n   48                              ->getMock();\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\CHANGELOG.md:\n   39   * added support for the remember_me parameter in the query\n   40   * added AccessMapInterface\n   41:  * [BC BREAK] moved user comparison logic out of UserInterface\n   42   * made the logout path check configurable\n   43   * after login, the user is now redirected to `default_target_path` if\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Authentication\\Provider\\DaoAuthenticationProvider.php:\n   15  use Symfony\\Component\\Security\\Core\\User\\UserProviderInterface;\n   16  use Symfony\\Component\\Security\\Core\\User\\UserCheckerInterface;\n   17: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   18  use Symfony\\Component\\Security\\Core\\Exception\\UsernameNotFoundException;\n   19  use Symfony\\Component\\Security\\Core\\Exception\\AuthenticationServiceException;\n   ..\n   52       * {@inheritdoc}\n   53       */\n   54:     protected function checkAuthentication(UserInterface $user, UsernamePasswordToken $token)\n   55      {\n   56          $currentUser = $token->getUser();\n   57:         if ($currentUser instanceof UserInterface) {\n   58              if ($currentUser->getPassword() !== $user->getPassword()) {\n   59                  throw new BadCredentialsException('The credentials were changed from another session.');\n   ..\n   76      {\n   77          $user = $token->getUser();\n   78:         if ($user instanceof UserInterface) {\n   79              return $user;\n   80          }\n   ..\n   83              $user = $this->userProvider->loadUserByUsername($username);\n   84  \n   85:             if (!$user instanceof UserInterface) {\n   86:                 throw new AuthenticationServiceException('The user provider must return a UserInterface object.');\n   87              }\n   88  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Authentication\\Provider\\UserAuthenticationProvider.php:\n   12  namespace Symfony\\Component\\Security\\Core\\Authentication\\Provider;\n   13  \n   14: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   15  use Symfony\\Component\\Security\\Core\\User\\UserCheckerInterface;\n   16  use Symfony\\Component\\Security\\Core\\Exception\\UsernameNotFoundException;\n   ..\n   78          }\n   79  \n   80:         if (!$user instanceof UserInterface) {\n   81:             throw new AuthenticationServiceException('retrieveUser() must return a UserInterface.');\n   82          }\n   83  \n   ..\n  111       * Retrieves roles from user and appends SwitchUserRole if original token contained one.\n  112       *\n  113:      * @param UserInterface  $user  The user\n  114       * @param TokenInterface $token The token\n  115       *\n  116       * @return Role[] The user roles\n  117       */\n  118:     private function getRoles(UserInterface $user, TokenInterface $token)\n  119      {\n  120          $roles = $user->getRoles();\n  ...\n  137       * @param UsernamePasswordToken $token    The Token\n  138       *\n  139:      * @return UserInterface The user\n  140       *\n  141       * @throws AuthenticationException if the credentials could not be validated\n  ...\n  147       * credentials).\n  148       *\n  149:      * @param UserInterface         $user  The retrieved UserInterface instance\n  150       * @param UsernamePasswordToken $token The UsernamePasswordToken token to be authenticated\n  151       *\n  152       * @throws AuthenticationException if the credentials could not be validated\n  153       */\n  154:     abstract protected function checkAuthentication(UserInterface $user, UsernamePasswordToken $token);\n  155  }\n  156  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Authentication\\Token\\AbstractToken.php:\n   14  use Symfony\\Component\\Security\\Core\\Role\\RoleInterface;\n   15  use Symfony\\Component\\Security\\Core\\Role\\Role;\n   16: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   17: use Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface;\n   18  use Symfony\\Component\\Security\\Core\\User\\EquatableInterface;\n   19  \n   ..\n   64      public function getUsername()\n   65      {\n   66:         if ($this->user instanceof UserInterface) {\n   67              return $this->user->getUsername();\n   68          }\n   ..\n   82       * Sets the user in the token.\n   83       *\n   84:      * The user can be a UserInterface instance, or an object implementing\n   85       * a __toString method or the username as a regular string.\n   86       *\n   ..\n   90      public function setUser($user)\n   91      {\n   92:         if (!($user instanceof UserInterface || (is_object($user) && method_exists($user, '__toString')) || is_string($user))) {\n   93:             throw new \\InvalidArgumentException('$user must be an instanceof UserInterface, an object implementing a __toString method, or a primitive string.');\n   94          }\n   95  \n   96          if (null === $this->user) {\n   97              $changed = false;\n   98:         } elseif ($this->user instanceof UserInterface) {\n   99:             if (!$user instanceof UserInterface) {\n  100                  $changed = true;\n  101              } else {\n  102                  $changed = $this->hasUserChanged($user);\n  103              }\n  104:         } elseif ($user instanceof UserInterface) {\n  105              $changed = true;\n  106          } else {\n  ...\n  136      public function eraseCredentials()\n  137      {\n  138:         if ($this->getUser() instanceof UserInterface) {\n  139              $this->getUser()->eraseCredentials();\n  140          }\n  ...\n  241      }\n  242  \n  243:     private function hasUserChanged(UserInterface $user)\n  244      {\n  245:         if (!($this->user instanceof UserInterface)) {\n  246:             throw new \\BadMethodCallException('Method \"hasUserChanged\" should be called when current user class is instance of \"UserInterface\".');\n  247          }\n  248  \n  ...\n  263          }\n  264  \n  265:         if ($this->user instanceof AdvancedUserInterface && $user instanceof AdvancedUserInterface) {\n  266              if ($this->user->isAccountNonExpired() !== $user->isAccountNonExpired()) {\n  267                  return true;\n  ...\n  279                  return true;\n  280              }\n  281:         } elseif ($this->user instanceof AdvancedUserInterface xor $user instanceof AdvancedUserInterface) {\n  282              return true;\n  283          }\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Authentication\\Token\\RememberMeToken.php:\n   12  namespace Symfony\\Component\\Security\\Core\\Authentication\\Token;\n   13  \n   14: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   15  \n   16  /**\n   ..\n   27       * Constructor.\n   28       *\n   29:      * @param UserInterface $user\n   30       * @param string        $providerKey\n   31       * @param string        $key\n   ..\n   33       * @throws \\InvalidArgumentException\n   34       */\n   35:     public function __construct(UserInterface $user, $providerKey, $key)\n   36      {\n   37          parent::__construct($user->getRoles());\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Authentication\\Token\\UsernamePasswordToken.php:\n   27       * Constructor.\n   28       *\n   29:      * @param string          $user        The username (like a nickname, email address, etc.), or a UserInterface instance or an object implementing a __toString method.\n   30       * @param string          $credentials This usually is the password of the user\n   31       * @param string          $providerKey The provider key\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Encoder\\EncoderFactoryInterface.php:\n   12  namespace Symfony\\Component\\Security\\Core\\Encoder;\n   13  \n   14: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   15  \n   16  /**\n   ..\n   24       * Returns the password encoder to use for the given account.\n   25       *\n   26:      * @param UserInterface|string $user A UserInterface instance or a class name\n   27       *\n   28       * @return PasswordEncoderInterface\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Exception\\AccountStatusException.php:\n   12  namespace Symfony\\Component\\Security\\Core\\Exception;\n   13  \n   14: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   15  \n   16  /**\n   ..\n   28       * Get the user.\n   29       *\n   30:      * @return UserInterface\n   31       */\n   32      public function getUser()\n   ..\n   38       * Set the user.\n   39       *\n   40:      * @param UserInterface $user\n   41       */\n   42:     public function setUser(UserInterface $user)\n   43      {\n   44          $this->user = $user;\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Exception\\UnsupportedUserException.php:\n   14  /**\n   15   * This exception is thrown when an account is reloaded from a provider which\n   16:  * doesn't support the passed implementation of UserInterface.\n   17   *\n   18   * @author Johannes M. Schmitt <schmittjoh@gmail.com>\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\Authentication\\Provider\\DaoAuthenticationProviderTest.php:\n   22       * @expectedException \\Symfony\\Component\\Security\\Core\\Exception\\AuthenticationServiceException\n   23       */\n   24:     public function testRetrieveUserWhenProviderDoesNotReturnAnUserInterface()\n   25      {\n   26          $provider = $this->getProvider('fabien');\n   ..\n   74          ;\n   75  \n   76:         $user = $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface');\n   77          $token = $this->getSupportedToken();\n   78          $token->expects($this->once())\n   ..\n   91      public function testRetrieveUser()\n   92      {\n   93:         $user = $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface');\n   94  \n   95          $userProvider = $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserProviderInterface');\n   ..\n  130          $method->invoke(\n  131              $provider,\n  132:             $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface'),\n  133              $token\n  134          );\n  ...\n  157          $method->invoke(\n  158              $provider,\n  159:             $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface'),\n  160              $token\n  161          );\n  ...\n  183          ;\n  184  \n  185:         $method->invoke($provider, $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface'), $token);\n  186      }\n  187  \n  ...\n  191      public function testCheckAuthenticationDoesNotReauthenticateWhenPasswordHasChanged()\n  192      {\n  193:         $user = $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface');\n  194          $user->expects($this->once())\n  195               ->method('getPassword')\n  ...\n  202                ->will($this->returnValue($user));\n  203  \n  204:         $dbUser = $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface');\n  205          $dbUser->expects($this->once())\n  206                 ->method('getPassword')\n  ...\n  216      public function testCheckAuthenticationWhenTokenNeedsReauthenticationWorksWithoutOriginalCredentials()\n  217      {\n  218:         $user = $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface');\n  219          $user->expects($this->once())\n  220               ->method('getPassword')\n  ...\n  227                ->will($this->returnValue($user));\n  228  \n  229:         $dbUser = $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface');\n  230          $dbUser->expects($this->once())\n  231                 ->method('getPassword')\n  ...\n  257          ;\n  258  \n  259:         $method->invoke($provider, $this->getMock('Symfony\\\\Component\\\\Security\\\\Core\\\\User\\\\UserInterface'), $token);\n  260      }\n  261  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\Authentication\\Provider\\PreAuthenticatedAuthenticationProviderTest.php:\n   54      public function testAuthenticate()\n   55      {\n   56:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   57          $user\n   58              ->expects($this->once())\n   ..\n   76      public function testAuthenticateWhenUserCheckerThrowsException()\n   77      {\n   78:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   79  \n   80          $userChecker = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserCheckerInterface');\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\Authentication\\Provider\\RememberMeAuthenticationProviderTest.php:\n   63      public function testAuthenticate()\n   64      {\n   65:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   66          $user->expects($this->exactly(2))\n   67               ->method('getRoles')\n   ..\n   83      {\n   84          if (null === $user) {\n   85:             $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   86              $user\n   87                  ->expects($this->any())\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\Authentication\\Provider\\UserAuthenticationProviderTest.php:\n   67       * @expectedException \\Symfony\\Component\\Security\\Core\\Exception\\AuthenticationServiceException\n   68       */\n   69:     public function testAuthenticateWhenProviderDoesNotReturnAnUserInterface()\n   70      {\n   71          $provider = $this->getProvider(false, true);\n   ..\n   92          $provider->expects($this->once())\n   93                   ->method('retrieveUser')\n   94:                  ->will($this->returnValue($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface')))\n   95          ;\n   96  \n   ..\n  112          $provider->expects($this->once())\n  113                   ->method('retrieveUser')\n  114:                  ->will($this->returnValue($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface')))\n  115          ;\n  116  \n  ...\n  127          $provider->expects($this->once())\n  128                   ->method('retrieveUser')\n  129:                  ->will($this->returnValue($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface')))\n  130          ;\n  131          $provider->expects($this->once())\n  ...\n  146          $provider->expects($this->once())\n  147                   ->method('retrieveUser')\n  148:                  ->will($this->returnValue($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface')))\n  149          ;\n  150          $provider->expects($this->once())\n  ...\n  158      public function testAuthenticate()\n  159      {\n  160:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  161          $user->expects($this->once())\n  162               ->method('getRoles')\n  ...\n  192      public function testAuthenticateWithPreservingRoleSwitchUserRole()\n  193      {\n  194:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  195          $user->expects($this->once())\n  196               ->method('getRoles')\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\Authentication\\Token\\AbstractTokenTest.php:\n   67          $this->assertEquals('fabien', $token->getUsername());\n   68  \n   69:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   70          $user->expects($this->once())->method('getUsername')->will($this->returnValue('fabien'));\n   71          $token->setUser($user);\n   ..\n   77          $token = $this->getToken(array('ROLE_FOO'));\n   78  \n   79:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   80          $user->expects($this->once())->method('eraseCredentials');\n   81          $token->setUser($user);\n   ..\n  185      public function getUsers()\n  186      {\n  187:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  188:         $advancedUser = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n  189  \n  190          return array(\n  ...\n  214      public function getUserChanges()\n  215      {\n  216:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  217:         $advancedUser = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n  218  \n  219          return array(\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\Encoder\\EncoderFactoryTest.php:\n   16  use Symfony\\Component\\Security\\Core\\Encoder\\EncoderAwareInterface;\n   17  use Symfony\\Component\\Security\\Core\\User\\User;\n   18: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   19  \n   20  class EncoderFactoryTest extends \\PHPUnit_Framework_TestCase\n   ..\n   22      public function testGetEncoderWithMessageDigestEncoder()\n   23      {\n   24:         $factory = new EncoderFactory(array('Symfony\\Component\\Security\\Core\\User\\UserInterface' => array(\n   25              'class' => 'Symfony\\Component\\Security\\Core\\Encoder\\MessageDigestPasswordEncoder',\n   26              'arguments' => array('sha512', true, 5),\n   27          )));\n   28  \n   29:         $encoder = $factory->getEncoder($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface'));\n   30          $expectedEncoder = new MessageDigestPasswordEncoder('sha512', true, 5);\n   31  \n   ..\n   36      {\n   37          $factory = new EncoderFactory(array(\n   38:             'Symfony\\Component\\Security\\Core\\User\\UserInterface' => new MessageDigestPasswordEncoder('sha1'),\n   39          ));\n   40  \n   41:         $encoder = $factory->getEncoder($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface'));\n   42          $expectedEncoder = new MessageDigestPasswordEncoder('sha1');\n   43          $this->assertEquals($expectedEncoder->encodePassword('foo', ''), $encoder->encodePassword('foo', ''));\n   ..\n   51      {\n   52          $factory = new EncoderFactory(array(\n   53:             'Symfony\\Component\\Security\\Core\\User\\UserInterface' => new MessageDigestPasswordEncoder('sha1'),\n   54          ));\n   55  \n   ..\n  135  }\n  136  \n  137: class SomeUser implements UserInterface\n  138  {\n  139      public function getRoles() {}\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\User\\ChainUserProviderTest.php:\n  176      protected function getAccount()\n  177      {\n  178:         return $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  179      }\n  180  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Tests\\Validator\\Constraints\\UserPasswordValidatorTest.php:\n   87      protected function createUser()\n   88      {\n   89:         $mock = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   90  \n   91          $mock\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface.php:\n   21   * Adds extra features to a user class related to account status flags.\n   22   *\n   23:  * This interface can be implemented in place of UserInterface if you'd like\n   24   * the authentication system to consider different account status flags\n   25   * during authentication. If any of the methods in this interface return\n   ..\n   31   * of AccountStatusException\n   32   *\n   33:  * @see UserInterface\n   34   * @see AccountStatusException\n   35   *\n   36   * @author Fabien Potencier <fabien@symfony.com>\n   37   */\n   38: interface AdvancedUserInterface extends UserInterface\n   39  {\n   40      /**\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\ChainUserProvider.php:\n   61       * {@inheritdoc}\n   62       */\n   63:     public function refreshUser(UserInterface $user)\n   64      {\n   65          $supportedUserFound = false;\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\EquatableInterface.php:\n   28       *\n   29       * Also implementation should consider that $user instance may implement\n   30:      * the extended user interface `AdvancedUserInterface`.\n   31       *\n   32:      * @param UserInterface $user\n   33       *\n   34       * @return bool\n   35       */\n   36:     public function isEqualTo(UserInterface $user);\n   37  }\n   38  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\InMemoryUserProvider.php:\n   50       * Adds a new User to the provider.\n   51       *\n   52:      * @param UserInterface $user A UserInterface instance\n   53       *\n   54       * @throws \\LogicException\n   55       */\n   56:     public function createUser(UserInterface $user)\n   57      {\n   58          if (isset($this->users[strtolower($user->getUsername())])) {\n   ..\n   84       * {@inheritdoc}\n   85       */\n   86:     public function refreshUser(UserInterface $user)\n   87      {\n   88          if (!$user instanceof User) {\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\User.php:\n   19   * @author Fabien Potencier <fabien@symfony.com>\n   20   */\n   21: final class User implements AdvancedUserInterface\n   22  {\n   23      private $username;\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\UserChecker.php:\n   27       * {@inheritdoc}\n   28       */\n   29:     public function checkPreAuth(UserInterface $user)\n   30      {\n   31:         if (!$user instanceof AdvancedUserInterface) {\n   32              return;\n   33          }\n   ..\n   55       * {@inheritdoc}\n   56       */\n   57:     public function checkPostAuth(UserInterface $user)\n   58      {\n   59:         if (!$user instanceof AdvancedUserInterface) {\n   60              return;\n   61          }\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\UserCheckerInterface.php:\n   24       * Checks the user account before authentication.\n   25       *\n   26:      * @param UserInterface $user a UserInterface instance\n   27       */\n   28:     public function checkPreAuth(UserInterface $user);\n   29  \n   30      /**\n   31       * Checks the user account after authentication.\n   32       *\n   33:      * @param UserInterface $user a UserInterface instance\n   34       */\n   35:     public function checkPostAuth(UserInterface $user);\n   36  }\n   37  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\UserInterface.php:\n   28   *\n   29   * @see UserProviderInterface\n   30:  * @see AdvancedUserInterface\n   31   *\n   32   * @author Fabien Potencier <fabien@symfony.com>\n   33   */\n   34: interface UserInterface\n   35  {\n   36      /**\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\UserProviderInterface.php:\n   16  \n   17  /**\n   18:  * Represents a class that loads UserInterface objects from some source for the authentication system.\n   19   *\n   20   * In a typical authentication configuration, a username (i.e. some unique\n   21   * user identifier) credential enters the system (via form login, or any\n   22   * method). The user provider that is configured with that authentication\n   23:  * method is asked to load the UserInterface object for the given username\n   24   * (via loadUserByUsername) so that the rest of the process can continue.\n   25   *\n   26   * Internally, a user provider can load users from any source (databases,\n   27   * configuration, web service). This is totally independent of how the authentication\n   28:  * information is submitted or what the UserInterface object looks like.\n   29   *\n   30:  * @see UserInterface\n   31   *\n   32   * @author Fabien Potencier <fabien@symfony.com>\n   ..\n   42       * @param string $username The username\n   43       *\n   44:      * @return UserInterface\n   45       *\n   46       * @see UsernameNotFoundException\n   ..\n   55       *\n   56       * It is up to the implementation to decide if the user data should be\n   57:      * totally reloaded (e.g. from the database), or if the UserInterface\n   58       * object can just be merged into some internal array of users / identity\n   59       * map.\n   60:      * @param UserInterface $user\n   61       *\n   62:      * @return UserInterface\n   63       *\n   64       * @throws UnsupportedUserException if the account is not supported\n   65       */\n   66:     public function refreshUser(UserInterface $user);\n   67  \n   68      /**\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\Validator\\Constraints\\UserPasswordValidator.php:\n   12  namespace Symfony\\Component\\Security\\Core\\Validator\\Constraints;\n   13  \n   14: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   15  use Symfony\\Component\\Security\\Core\\SecurityContextInterface;\n   16  use Symfony\\Component\\Security\\Core\\Encoder\\EncoderFactoryInterface;\n   ..\n   42          $user = $this->securityContext->getToken()->getUser();\n   43  \n   44:         if (!$user instanceof UserInterface) {\n   45:             throw new ConstraintDefinitionException('The User object must implement the UserInterface interface.');\n   46          }\n   47  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\Event\\SwitchUserEvent.php:\n   13  \n   14  use Symfony\\Component\\HttpFoundation\\Request;\n   15: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   16  use Symfony\\Component\\EventDispatcher\\Event;\n   17  \n   ..\n   26      private $targetUser;\n   27  \n   28:     public function __construct(Request $request, UserInterface $targetUser)\n   29      {\n   30          $this->request = $request;\n   ..\n   41  \n   42      /**\n   43:      * @return UserInterface\n   44       */\n   45      public function getTargetUser()\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\Firewall\\AbstractAuthenticationListener.php:\n   38   * - an TokenInterface to hold authentication related data\n   39   * - an AuthenticationProvider to perform the actual authentication of the\n   40:  *   token, retrieve the UserInterface implementation from a database, and\n   41   *   perform the specific account checks using the UserChecker\n   42   *\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\Firewall\\ContextListener.php:\n   21  use Symfony\\Component\\Security\\Core\\Exception\\UnsupportedUserException;\n   22  use Symfony\\Component\\Security\\Core\\SecurityContextInterface;\n   23: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   24  use Symfony\\Component\\Security\\Core\\User\\UserProviderInterface;\n   25  use Symfony\\Component\\EventDispatcher\\EventDispatcherInterface;\n   ..\n  146      {\n  147          $user = $token->getUser();\n  148:         if (!$user instanceof UserInterface) {\n  149              return $token;\n  150          }\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\RememberMe\\AbstractRememberMeServices.php:\n   13  \n   14  use Symfony\\Component\\Security\\Core\\Exception\\AuthenticationException;\n   15: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   16  use Symfony\\Component\\Security\\Core\\Authentication\\Token\\RememberMeToken;\n   17  use Symfony\\Component\\Security\\Http\\Logout\\LogoutHandlerInterface;\n   ..\n  115              $user = $this->processAutoLoginCookie($cookieParts, $request);\n  116  \n  117:             if (!$user instanceof UserInterface) {\n  118:                 throw new \\RuntimeException('processAutoLoginCookie() must return a UserInterface implementation.');\n  119              }\n  120  \n  ...\n  182          $this->cancelCookie($request);\n  183  \n  184:         if (!$token->getUser() instanceof UserInterface) {\n  185              if (null !== $this->logger) {\n  186:                 $this->logger->debug('Remember-me ignores token since it does not contain a UserInterface implementation.');\n  187              }\n  188  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\RememberMe\\TokenBasedRememberMeServices.php:\n   17  use Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface;\n   18  use Symfony\\Component\\Security\\Core\\Exception\\AuthenticationException;\n   19: use Symfony\\Component\\Security\\Core\\User\\UserInterface;\n   20  use Symfony\\Component\\Security\\Core\\Util\\StringUtils;\n   21  \n   ..\n   51          }\n   52  \n   53:         if (!$user instanceof UserInterface) {\n   54:             throw new \\RuntimeException(sprintf('The UserProviderInterface implementation must return an instance of UserInterface, but returned \"%s\".', get_class($user)));\n   55          }\n   56  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\Tests\\Firewall\\SwitchUserListenerTest.php:\n  122      {\n  123          $token = $this->getToken(array($this->getMock('Symfony\\Component\\Security\\Core\\Role\\RoleInterface')));\n  124:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  125          $user->expects($this->any())->method('getRoles')->will($this->returnValue(array()));\n  126  \n  ...\n  152      {\n  153          $token = $this->getToken(array($this->getMock('Symfony\\Component\\Security\\Core\\Role\\RoleInterface')));\n  154:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  155          $user->expects($this->any())->method('getRoles')->will($this->returnValue(array()));\n  156  \n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\Tests\\RememberMe\\AbstractRememberMeServicesTest.php:\n   41       * @expectedException \\RuntimeException\n   42       */\n   43:     public function testAutoLoginThrowsExceptionWhenImplementationDoesNotReturnUserInterface()\n   44      {\n   45          $service = $this->getService(null, array('name' => 'foo', 'path' => null, 'domain' => null));\n   ..\n   62          $request->cookies->set('foo', 'foo');\n   63  \n   64:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   65          $user\n   66              ->expects($this->once())\n   ..\n  104      }\n  105  \n  106:     public function testLoginSuccessIsNotProcessedWhenTokenDoesNotContainUserInterfaceImplementation()\n  107      {\n  108          $service = $this->getService(null, array('name' => 'foo', 'always_remember_me' => true, 'path' => null, 'domain' => null));\n  109          $request = new Request();\n  110          $response = new Response();\n  111:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  112          $token = $this->getMock('Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface');\n  113          $token\n  ...\n  132          $request = new Request();\n  133          $response = new Response();\n  134:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  135          $token = $this->getMock('Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface');\n  136          $token\n  ...\n  156          $request = new Request();\n  157          $response = new Response();\n  158:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  159          $token = $this->getMock('Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface');\n  160          $token\n  ...\n  183          $request->request->set('foo', array('bar' => $value));\n  184          $response = new Response();\n  185:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  186          $token = $this->getMock('Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface');\n  187          $token\n  ...\n  210          $request->request->set('foo', $value);\n  211          $response = new Response();\n  212:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  213          $token = $this->getMock('Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface');\n  214          $token\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\Tests\\RememberMe\\PersistentTokenBasedRememberMeServicesTest.php:\n  144      public function testAutoLogin()\n  145      {\n  146:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  147          $user\n  148              ->expects($this->once())\n  ...\n  263          $response = new Response();\n  264  \n  265:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  266          $account\n  267              ->expects($this->once())\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Http\\Tests\\RememberMe\\TokenBasedRememberMeServicesTest.php:\n   65          $request->cookies->set('foo', base64_encode('class:'.base64_encode('foouser').':123456789:fooHash'));\n   66  \n   67:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   68          $user\n   69              ->expects($this->once())\n   ..\n   90          $request->cookies->set('foo', $this->getCookie('fooclass', 'foouser', time() - 1, 'foopass'));\n   91  \n   92:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   93          $user\n   94              ->expects($this->once())\n   ..\n  110      public function testAutoLogin()\n  111      {\n  112:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  113          $user\n  114              ->expects($this->once())\n  ...\n  170      }\n  171  \n  172:     public function testLoginSuccessIgnoresTokensWhichDoNotContainAnUserInterfaceImplementation()\n  173      {\n  174          $service = $this->getService(null, array('name' => 'foo', 'always_remember_me' => true, 'path' => null, 'domain' => null));\n  ...\n  198  \n  199          $token = $this->getMock('Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface');\n  200:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n  201          $user\n  202              ->expects($this->once())\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Tests\\Core\\Authentication\\Token\\RememberMeTokenTest.php:\n   72      protected function getUser($roles = array('ROLE_FOO'))\n   73      {\n   74:         $user = $this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface');\n   75          $user\n   76              ->expects($this->once())\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Tests\\Core\\User\\UserCheckerTest.php:\n   16  class UserCheckerTest extends \\PHPUnit_Framework_TestCase\n   17  {\n   18:     public function testCheckPostAuthNotAdvancedUserInterface()\n   19      {\n   20          $checker = new UserChecker();\n   21  \n   22:         $this->assertNull($checker->checkPostAuth($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface')));\n   23      }\n   24  \n   ..\n   27          $checker = new UserChecker();\n   28  \n   29:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n   30          $account->expects($this->once())->method('isCredentialsNonExpired')->will($this->returnValue(true));\n   31  \n   ..\n   40          $checker = new UserChecker();\n   41  \n   42:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n   43          $account->expects($this->once())->method('isCredentialsNonExpired')->will($this->returnValue(false));\n   44  \n   ..\n   46      }\n   47  \n   48:     public function testCheckPreAuthNotAdvancedUserInterface()\n   49      {\n   50          $checker = new UserChecker();\n   51  \n   52:         $this->assertNull($checker->checkPreAuth($this->getMock('Symfony\\Component\\Security\\Core\\User\\UserInterface')));\n   53      }\n   54  \n   ..\n   57          $checker = new UserChecker();\n   58  \n   59:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n   60          $account->expects($this->once())->method('isAccountNonLocked')->will($this->returnValue(true));\n   61          $account->expects($this->once())->method('isEnabled')->will($this->returnValue(true));\n   ..\n   72          $checker = new UserChecker();\n   73  \n   74:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n   75          $account->expects($this->once())->method('isAccountNonLocked')->will($this->returnValue(false));\n   76  \n   ..\n   85          $checker = new UserChecker();\n   86  \n   87:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n   88          $account->expects($this->once())->method('isAccountNonLocked')->will($this->returnValue(true));\n   89          $account->expects($this->once())->method('isEnabled')->will($this->returnValue(false));\n   ..\n   99          $checker = new UserChecker();\n  100  \n  101:         $account = $this->getMock('Symfony\\Component\\Security\\Core\\User\\AdvancedUserInterface');\n  102          $account->expects($this->once())->method('isAccountNonLocked')->will($this->returnValue(true));\n  103          $account->expects($this->once())->method('isEnabled')->will($this->returnValue(true));\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\UPGRADE-2.1.md:\n  125  ### Security\n  126  \n  127:   * `Symfony\\Component\\Security\\Core\\User\\UserInterface::equals()` has moved to\n  128      `Symfony\\Component\\Security\\Core\\User\\EquatableInterface::isEqualTo()`.\n  129  \n  ...\n  140  \n  141      ```\n  142:     class User implements UserInterface\n  143      {\n  144          // ...\n  145:         public function equals(UserInterface $user) { /* ... */ }\n  146          // ...\n  147      }\n  ...\n  151  \n  152      ```\n  153:     class User implements UserInterface, EquatableInterface\n  154      {\n  155          // ...\n  156:         public function isEqualTo(UserInterface $user) { /* ... */ }\n  157          // ...\n  158      }\n\n199 matches across 52 files\n\n\nSearching 7144 files for \"class UserInterface\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 7144 files for \"interface UserInterface\" (case sensitive)\n\nC:\\wamp\\www\\tp-synthese\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Security\\Core\\User\\UserInterface.php:\n   32   * @author Fabien Potencier <fabien@symfony.com>\n   33   */\n   34: interface UserInterface\n   35  {\n   36      /**\n\n1 match in 1 file\n",
+			"file": "/C/wamp/www/tp-synthese/src/Imie/ProjectsBundle/Resources/views/Default/index.html.twig",
 			"settings":
 			{
-				"buffer_size": 45121,
+				"buffer_size": 368,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/wamp/www/tp-synthese/app/logs/dev.log",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/wamp/www/tp-synthese/app/logs/.gitignore",
+			"settings":
+			{
+				"buffer_size": 71,
 				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/C/wamp/www/tp-synthese/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php",
-			"settings":
-			{
-				"buffer_size": 2475,
-				"line_ending": "Unix"
+				"name": "# Ignore everything in this directory"
 			}
 		}
 	],
@@ -135,28 +113,41 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/tp-synthese/app/Resources/views/base.html.twig",
+		"/C/wamp/www/tp-synthese/vendor/twig/twig/lib/Twig/TokenParser/Block.php",
+		"/C/wamp/www/tp-synthese/web/bundles/Imie/css/styles.css",
+		"/C/wamp/www/tp-synthese/src/Imie/skillsBundle/Form/skillsType.php",
+		"/C/wamp/www/tp-synthese/symfony.sql",
+		"/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Controller/DefaultController.php",
+		"/C/wamp/www/tp-synthese/app/config/routing.yml",
+		"/C/wamp/www/tp-synthese/update.sql",
+		"/C/wamp/www/tp-synthese/.gitignore",
+		"/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Resources/views/Default/login.html.twig",
+		"/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Entity/Users.php",
+		"/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Controller/DefaultController.php",
+		"/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Resources/config/routing.yml",
+		"/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Resources/views/Default/index.html.twig",
+		"/C/wamp/www/tp-synthese/app/config/security.yml",
+		"/C/wamp/www/tp-synthese/app/logs/dev.log",
+		"/C/wamp/www/tp-synthese/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php",
+		"/C/wamp/www/tp-synthese/app/cache/dev/appDevDebugProjectContainer.xml",
+		"/C/wamp/www/tp-synthese/app/cache/dev/appDevDebugProjectContainer.php",
 		"/C/wamp/www/tp-synthese/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/Tests/Fixtures/User.php",
 		"/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Controller/SecurityController.php",
 		"/C/wamp/www/tp-synthese/src/Imie/SdzUserBundle/Controller/SecurityController.php",
 		"/C/wamp/www/tp-synthese/src/Imie/skillsBundle/Resources/views/Default/index.html.twig",
-		"/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Controller/DefaultController.php",
 		"/C/wamp/www/tp-synthese/src/Imie/SdzUserBundle/Resources/views/Default/login.html.twig",
 		"/C/wamp/www/tp-synthese/src/Imie/SdzUserBundle/Resources/config/routing.yml",
-		"/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Entity/Users.php",
 		"/C/wamp/www/tp-synthese/src/Imie/ProjectsBundle/Form/ProjectsType.php",
 		"/C/wamp/www/tp-synthese/src/Imie/ProjectsBundle/Controller/ProjectsController.php",
 		"/C/wamp/www/tp-synthese/src/Imie/skillsBundle/Controller/SkillsController.php",
 		"/C/wamp/www/tp-synthese/src/Imie/skillsBundle/Resources/views/Default/add.html.twig",
-		"/C/wamp/www/tp-synthese/src/Imie/skillsBundle/Form/skillsType.php",
-		"/C/wamp/www/tp-synthese/app/config/security.yml",
-		"/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Resources/config/routing.yml",
 		"/C/wamp/www/tp-synthese/src/Imie/ProjectsBundle/Resources/config/routing.yml",
 		"/C/wamp/www/tp-synthese/src/Imie/ProjectsBundle/Entity/Projects.php",
 		"/C/wamp/www/tp-synthese/src/Imie/ProjectsBundle/Resources/views/Default/add.html.twig",
 		"/C/wamp/www/tp-synthese/src/Imie/skillsBundle/Resources/config/routing.yml",
 		"/C/wamp/www/tp-synthese/app/cache/dev/appDevUrlMatcher.php",
 		"/C/wamp/www/tp-synthese/src/Imie/WorkgroupsBundle/Entity/Workgroups.php",
-		"/C/wamp/www/tp-synthese/app/config/routing.yml",
 		"/C/wamp/www/tp-synthese/app/cache/.gitignore",
 		"/C/wamp/www/tp-synthese/app/AppKernel.php",
 		"/C/wamp/www/tp-synthese/src/Imie/WorkgroupsBundle/Resources/views/Default/index.html.twig",
@@ -212,7 +203,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -232,6 +223,16 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"<<<<<",
+			"height",
+			"45",
+			"10px",
+			"300",
+			"margin: 10px",
+			"bloc",
+			"style.css",
+			"<<<<<",
+			"<<<<<<<<<",
 			"interface UserInterface",
 			"class UserInterface",
 			"UserInterface",
@@ -301,213 +302,61 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "routing.yml",
+					"file": "/C/wamp/www/tp-synthese/web/bundles/Imie/css/responsive.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 676,
+						"buffer_size": 2105,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								594,
-								594
+								617,
+								617
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Resources/views/Default/login.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 558,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								532,
-								532
-							]
-						],
-						"settings":
-						{
-							"auto_name": "login",
-							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Controller/DefaultController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1360,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								608,
-								608
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/wamp/www/tp-synthese/src/Imie/UsersBundle/Entity/Users.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6949,
-								6949
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5715.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Controller/DefaultController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 381,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								381,
-								381
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Resources/config/routing.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 282,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								279,
-								279
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 1,
 					"file": "/C/wamp/www/tp-synthese/src/Imie/HomeBundle/Resources/views/Default/index.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 39,
+						"buffer_size": 146,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								39,
-								39
+								61,
+								68
+							],
+							[
+								87,
+								96
+							],
+							[
+								115,
+								119
 							]
 						],
 						"settings":
@@ -515,40 +364,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "security.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1532,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1496,
-								1525
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -558,823 +374,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 2,
+					"file": "/C/wamp/www/tp-synthese/app/Resources/views/base.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45121,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										208,
-										221
-									],
-									[
-										586,
-										599
-									],
-									[
-										1126,
-										1139
-									],
-									[
-										1412,
-										1425
-									],
-									[
-										1693,
-										1706
-									],
-									[
-										1898,
-										1911
-									],
-									[
-										2199,
-										2212
-									],
-									[
-										2804,
-										2817
-									],
-									[
-										3148,
-										3161
-									],
-									[
-										3270,
-										3283
-									],
-									[
-										3586,
-										3599
-									],
-									[
-										3660,
-										3673
-									],
-									[
-										3790,
-										3803
-									],
-									[
-										4061,
-										4074
-									],
-									[
-										4315,
-										4328
-									],
-									[
-										4576,
-										4589
-									],
-									[
-										5011,
-										5024
-									],
-									[
-										5244,
-										5257
-									],
-									[
-										5293,
-										5306
-									],
-									[
-										5417,
-										5430
-									],
-									[
-										5630,
-										5643
-									],
-									[
-										6007,
-										6020
-									],
-									[
-										6386,
-										6399
-									],
-									[
-										6774,
-										6787
-									],
-									[
-										7244,
-										7257
-									],
-									[
-										7523,
-										7536
-									],
-									[
-										7679,
-										7692
-									],
-									[
-										7984,
-										7997
-									],
-									[
-										8185,
-										8198
-									],
-									[
-										8299,
-										8312
-									],
-									[
-										8623,
-										8636
-									],
-									[
-										8856,
-										8869
-									],
-									[
-										8963,
-										8976
-									],
-									[
-										9147,
-										9160
-									],
-									[
-										9341,
-										9354
-									],
-									[
-										9546,
-										9559
-									],
-									[
-										9740,
-										9753
-									],
-									[
-										9783,
-										9796
-									],
-									[
-										10084,
-										10097
-									],
-									[
-										10442,
-										10455
-									],
-									[
-										10513,
-										10526
-									],
-									[
-										10706,
-										10719
-									],
-									[
-										10888,
-										10901
-									],
-									[
-										11122,
-										11135
-									],
-									[
-										11304,
-										11317
-									],
-									[
-										11542,
-										11555
-									],
-									[
-										11600,
-										11613
-									],
-									[
-										11812,
-										11825
-									],
-									[
-										12001,
-										12014
-									],
-									[
-										12162,
-										12175
-									],
-									[
-										12240,
-										12253
-									],
-									[
-										12393,
-										12406
-									],
-									[
-										12518,
-										12531
-									],
-									[
-										12560,
-										12573
-									],
-									[
-										12826,
-										12839
-									],
-									[
-										12869,
-										12882
-									],
-									[
-										13188,
-										13201
-									],
-									[
-										13290,
-										13303
-									],
-									[
-										13506,
-										13519
-									],
-									[
-										13896,
-										13909
-									],
-									[
-										14359,
-										14372
-									],
-									[
-										14507,
-										14520
-									],
-									[
-										14536,
-										14549
-									],
-									[
-										14874,
-										14887
-									],
-									[
-										14978,
-										14991
-									],
-									[
-										15113,
-										15126
-									],
-									[
-										15183,
-										15196
-									],
-									[
-										15528,
-										15541
-									],
-									[
-										15955,
-										15968
-									],
-									[
-										16153,
-										16166
-									],
-									[
-										16414,
-										16427
-									],
-									[
-										16698,
-										16711
-									],
-									[
-										16904,
-										16917
-									],
-									[
-										17096,
-										17109
-									],
-									[
-										17339,
-										17352
-									],
-									[
-										17598,
-										17611
-									],
-									[
-										17922,
-										17935
-									],
-									[
-										18181,
-										18194
-									],
-									[
-										18422,
-										18435
-									],
-									[
-										18766,
-										18779
-									],
-									[
-										19019,
-										19032
-									],
-									[
-										19442,
-										19455
-									],
-									[
-										19685,
-										19698
-									],
-									[
-										20116,
-										20129
-									],
-									[
-										20412,
-										20425
-									],
-									[
-										20662,
-										20675
-									],
-									[
-										20912,
-										20925
-									],
-									[
-										21203,
-										21216
-									],
-									[
-										21428,
-										21441
-									],
-									[
-										21704,
-										21717
-									],
-									[
-										22094,
-										22107
-									],
-									[
-										22405,
-										22418
-									],
-									[
-										22668,
-										22681
-									],
-									[
-										22777,
-										22790
-									],
-									[
-										22970,
-										22983
-									],
-									[
-										23079,
-										23092
-									],
-									[
-										23431,
-										23444
-									],
-									[
-										23698,
-										23711
-									],
-									[
-										24013,
-										24026
-									],
-									[
-										24254,
-										24267
-									],
-									[
-										24441,
-										24454
-									],
-									[
-										24781,
-										24794
-									],
-									[
-										24924,
-										24937
-									],
-									[
-										25241,
-										25254
-									],
-									[
-										25554,
-										25567
-									],
-									[
-										25861,
-										25874
-									],
-									[
-										26115,
-										26128
-									],
-									[
-										26269,
-										26282
-									],
-									[
-										26291,
-										26304
-									],
-									[
-										26523,
-										26536
-									],
-									[
-										26863,
-										26876
-									],
-									[
-										26914,
-										26927
-									],
-									[
-										27027,
-										27040
-									],
-									[
-										27263,
-										27276
-									],
-									[
-										27285,
-										27298
-									],
-									[
-										27413,
-										27426
-									],
-									[
-										27611,
-										27624
-									],
-									[
-										27899,
-										27912
-									],
-									[
-										28141,
-										28154
-									],
-									[
-										28220,
-										28233
-									],
-									[
-										28371,
-										28384
-									],
-									[
-										28450,
-										28463
-									],
-									[
-										28722,
-										28735
-									],
-									[
-										28744,
-										28757
-									],
-									[
-										28822,
-										28835
-									],
-									[
-										28962,
-										28975
-									],
-									[
-										28984,
-										28997
-									],
-									[
-										29063,
-										29076
-									],
-									[
-										29280,
-										29293
-									],
-									[
-										29388,
-										29401
-									],
-									[
-										29601,
-										29614
-									],
-									[
-										29962,
-										29975
-									],
-									[
-										30318,
-										30331
-									],
-									[
-										30376,
-										30389
-									],
-									[
-										30549,
-										30562
-									],
-									[
-										30791,
-										30804
-									],
-									[
-										30930,
-										30943
-									],
-									[
-										30986,
-										30999
-									],
-									[
-										31147,
-										31160
-									],
-									[
-										31453,
-										31466
-									],
-									[
-										31734,
-										31747
-									],
-									[
-										31846,
-										31859
-									],
-									[
-										32119,
-										32132
-									],
-									[
-										32297,
-										32310
-									],
-									[
-										32430,
-										32443
-									],
-									[
-										32811,
-										32824
-									],
-									[
-										33251,
-										33264
-									],
-									[
-										33506,
-										33519
-									],
-									[
-										33835,
-										33848
-									],
-									[
-										34142,
-										34155
-									],
-									[
-										34250,
-										34263
-									],
-									[
-										34421,
-										34434
-									],
-									[
-										34586,
-										34599
-									],
-									[
-										34983,
-										34996
-									],
-									[
-										35135,
-										35148
-									],
-									[
-										35276,
-										35289
-									],
-									[
-										35691,
-										35704
-									],
-									[
-										36029,
-										36042
-									],
-									[
-										36443,
-										36456
-									],
-									[
-										36724,
-										36737
-									],
-									[
-										36913,
-										36926
-									],
-									[
-										37258,
-										37271
-									],
-									[
-										37577,
-										37590
-									],
-									[
-										37896,
-										37909
-									],
-									[
-										38244,
-										38257
-									],
-									[
-										38576,
-										38589
-									],
-									[
-										39007,
-										39020
-									],
-									[
-										39225,
-										39238
-									],
-									[
-										39650,
-										39663
-									],
-									[
-										39932,
-										39945
-									],
-									[
-										40152,
-										40165
-									],
-									[
-										40336,
-										40349
-									],
-									[
-										40719,
-										40732
-									],
-									[
-										41092,
-										41105
-									],
-									[
-										41419,
-										41432
-									],
-									[
-										41611,
-										41624
-									],
-									[
-										41797,
-										41810
-									],
-									[
-										42084,
-										42097
-									],
-									[
-										42307,
-										42320
-									],
-									[
-										42498,
-										42511
-									],
-									[
-										42684,
-										42697
-									],
-									[
-										43060,
-										43073
-									],
-									[
-										43343,
-										43356
-									],
-									[
-										43720,
-										43733
-									],
-									[
-										44091,
-										44104
-									],
-									[
-										44282,
-										44295
-									],
-									[
-										44369,
-										44382
-									],
-									[
-										44501,
-										44514
-									],
-									[
-										44611,
-										44624
-									],
-									[
-										45054,
-										45077
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								45069,
-								45069
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"incomplete_sync": null,
-							"line_numbers": false,
-							"output_tag": 3,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 14880.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/C/wamp/www/tp-synthese/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2475,
+						"buffer_size": 2505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1921,
-								1921
+								788,
+								788
 							]
 						],
 						"settings":
@@ -1382,15 +395,108 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 416.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/wamp/www/tp-synthese/src/Imie/ProjectsBundle/Resources/views/Default/index.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/wamp/www/tp-synthese/app/logs/dev.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/wamp/www/tp-synthese/app/logs/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 71,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# Ignore everything in this directory",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1446,6 +552,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"style",
+				"web\\bundles\\Imie\\css\\styles.css"
+			],
 			[
 				"routin",
 				"app\\config\\routing_dev.yml"

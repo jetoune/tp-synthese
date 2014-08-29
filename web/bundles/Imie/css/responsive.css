@@ -4,11 +4,11 @@
 
 #main-container {width:75%; margin: 10px; float: left;}
 
-#main-container #current {min-height: 200px; width: 100%; background-color: red; float: left; }
+#main-container #current {min-height: 200px; width: 100%; background-color: #57bd74; float: left; }
 
-#main-container #potential {min-height: 200px; width: 48%; background-color: red; float: left;margin-top: 20px;}
+#main-container #potential {min-height: 200px; width: 48%; background-color: #a2a0a1; float: left;margin-top: 20px;}
 
-#main-container #news {min-height: 200px; width: 48%; background-color: red; float: right;margin-top: 20px;}
+#main-container #news {min-height: 200px; width: 48%; background-color: #ef3125; float: right;margin-top: 20px;}
 
 
 #sidebar {width: 22%; margin-top: 10px; float: right; }
@@ -17,6 +17,7 @@
 
 #sidebar #rightMenu {padding: 10px; margin-top: 20px; }
 
+#keywords {width: 100%;}
 
 /* 
 .___  ___.   ______   .______    __   __       _______ 
@@ -30,13 +31,18 @@
 
 
 @media screen and (max-width: 450px) {
-  #main-container {
+  #main-container {min-width: 320px;
   }
 
+#logo {
+	width: 85px;
+}
 
-#main-container #potential { width: 100%;}
-#main-container #news { width: 100%;}
+#main-container #potential { width: 100%;min-width: 320px;}
+#main-container #news { width: 100%;min-width: 320px;}
 
+#projectTitle {margin-top: 90px;}
+#searchMenu {width: 100%; min-width: 320px;}
 }
 
 
@@ -60,11 +66,18 @@
   	width: 100%;
   }
 
-  #projectTitle {display: inline-block;margin-left: 20px;margin-top: -50px}
+#menu-mobile.on {display: block;}
 
-  #userSpace {width: 140px;display: inline-block;}
+
+  #projectTitle {display: block;margin:0;position: relative;top:0;left:0;}
+
+  #userSpace {width: 140px;display: block;position: absolute;top: 0;right: 0;}
+  #userSpace #buttonList{padding: 0;}
 
   #searchMenu {width: 48%;margin-left: 10px;}
 
+#mobil-menu {
+	display: block;
+}
   #rightMenu {display: none; }
 }

@@ -12,42 +12,157 @@ body{
 	margin-right: 2%;
 }
 
+#header {
+	border-bottom:1px solid #a2a0a1;
+	position: relative;
+}
+
+#mobil-menu {
+	display: block;
+	width: 35px;
+	height: 30px;
+	background-image: url('../images/picto_menu.png');
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 100px;
+	background-repeat: no-repeat;
+}
+
+#footer {
+	clear: both;
+	padding: 10px;
+	color: #a2a0a1;
+}
+
+#footer a {
+	font-size: 20px;
+	color: #a2a0a1;
+}
+
+#footer #imie-link {
+	margin-left: 30px;
+}
+
+#footer #term-use {
+	float: right;
+	margin-right: 30px;
+}
+
 #logo{
 	background-image: url('../images/logo-imie.png');
 	background-repeat: no-repeat;
 	height: 86px;
 	width: 184px;
 	display: inline-block;
+	margin-top: 10px;
 }
 
 #projectTitle{
 	display: inline;
-	margin-left: 20%;
 	font-size: 30px;
 	font-family: arial;
 	color: #47BBBC;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#userSpace div{
+	font-size: 18px; 
 }
 
 #userSpace{
-	width: 250px;
+	width: 165px;
 	display: inline;
-	text-align: right;
 	float: right;
-	margin-right: 2%;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
-#buttonList div{
+#buttonList li{
 	display: inline;
 	margin-left: 5%;
 }
 
+
+#buttonList li a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;;
+}
+
+#menu-mobile li{
+	list-style-type: none;
+}
+#menu-mobile {
+	display: none;
+	padding: 0;
+}
+
+#menu-mobile li a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	padding: 5px 20px;
+	color: #a2a0a1;
+	font-size: 20px;
+}
+
+#menu-mobile li a:hover {
+	color: #fff;
+	background-color: #a2a0a1;
+}
+
+#buttonList li.logout a{background-image: url('../images/logout.png');background-repeat: no-repeat;background-position: 5px;}
+#buttonList li.notif a{background-image: url('../images/notif.png');background-repeat: no-repeat;background-position: 5px;}
+#buttonList li.profil a{background-image: url('../images/profil.png');background-repeat: no-repeat;background-position: 5px;}
 /* END STYLE FOR THE HEADER */
 
 
 /* STYLE FOR THE RIGHT MENU */
 
 #searchMenu {
-background-color: #FDB515;
+	background-color: #FDB515;
+}
+#searchMenu select {
+	width: 100%;
+	margin: 10px 0;
+}
+#searchMenu input {
+	margin: 10px 0;
+	padding-left:5px; 
+}
+
+#searchMenu button {
+	color : #fff;
+	border:none;
+	background-color: #57bd74;
+	width: 100%;
+	padding: 5px;
+	font-weight: bold;
+	font-family: 'calibri';
+	font-size: 16px;
+}
+
+#rightMenuList {
+	padding: 0;
+}
+
+#rightMenuList li a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'calibri';
+	font-size: 18px;
+}
+
+#searchMenu h2, #rightMenu h2 {
+	font-family: 'calibri';
+	font-size: 20px;
+	margin: 0;
 }
 
 #rightMenu {
