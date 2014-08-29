@@ -2,7 +2,8 @@
 
 {% block body %}
 
-Liste des projets :
+<h2>Liste des projets :</h2>
+<a href="{{ path('projects_add') }}" class="update">Ajouter un projet</a>
 
 {% if  projects %}
 	<ul>
@@ -15,7 +16,6 @@ Liste des projets :
 	</ul>
 {% endif %}
 
-<a href="{{ path('projects_add') }}">Ajouter un projet</a>
 {% endblock %}
 
 

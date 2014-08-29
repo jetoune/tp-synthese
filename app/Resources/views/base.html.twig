@@ -22,18 +22,22 @@
                 </div>
                 <a href="" id="mobil-menu"></a>
                 <ul id="menu-mobile">
-                  <li><a href="#">Les étudiants</a></li>
-                  <li><a href="{{ path('projects_homepage') }}">Les projets</a></li>
-                  <li><a href="{{ path('imieskills_skills_list') }}">Listes des compétences</a></li>
-                  <li><a href="#">Mon profil</a></li>
-                  <li><a href="#">Administration</a></li>
+                    <li><a href="{{ path('users_list') }}">Les étudiants</a></li>
+                    <li><a href="{{ path('projects_homepage') }}">Les projets</a></li>
+                    <li><a href="{{ path('imieskills_skills_list') }}">Listes des compétences</a></li>
+                    <li><a href="{{ path('users_profil') }}">Mon profil</a></li>
+                    <li><a href="#" class="admin-panel">Administration</a>
+                        <ul class="panel-admin">
+                            <li><a href="{{ path('users_admin_import') }}">Importer les utilisateurs</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <!-- user's space -->
                 <div id="userSpace">
                     <div>{{ app.user.username }}</div>
                     <ul id="buttonList">
                         <li class="notif"><a href=""></a></li>
-                        <li class="profil"><a href=""></a></li>
+                        <li class="profil"><a href="{{ path('users_profil') }}"></a></li>
                         <li class="logout"><a href="{{ path('logout') }}"></a></li>
                     </ul>
                 </div>
@@ -59,11 +63,15 @@
                     <div id ="rightMenu">
                         <h2>Menu</h2>
                         <ul id ="rightMenuList">
-                            <li><a href="#">Les étudiants</a></li>
+                            <li><a href="{{ path('users_list') }}">Les étudiants</a></li>
                             <li><a href="{{ path('projects_homepage') }}">Les projets</a></li>
                             <li><a href="{{ path('imieskills_skills_list') }}">Listes des compétences</a></li>
-                            <li><a href="#">Mon profil</a></li>
-                            <li><a href="#">Administration</a></li>
+                            <li><a href="{{ path('users_profil') }}">Mon profil</a></li>
+                            <li><a href="#" class="admin-panel" >Administration</a>
+                                <ul class="panel-admin">
+                                    <li><a href="{{ path('users_admin_import') }}">Importer les utilisateurs</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>

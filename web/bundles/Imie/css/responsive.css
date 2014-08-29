@@ -34,15 +34,19 @@
   #main-container {min-width: 320px;
   }
 
-#logo {
-	width: 85px;
-}
+  #logo {
+  	width: 85px;
+  }
 
-#main-container #potential { width: 100%;min-width: 320px;}
-#main-container #news { width: 100%;min-width: 320px;}
+  #main-container #potential { width: 100%;min-width: 320px;}
+  #main-container #news { width: 100%;min-width: 320px;}
 
-#projectTitle {margin-top: 90px;}
-#searchMenu {width: 100%; min-width: 320px;}
+  #projectTitle {margin-top: 90px;}
+  #searchMenu {width: 100%; min-width: 320px;}
+	.update {float: none;margin-top: 0;}
+
+  #current .right, #current .left {float: none;width: 100%;}
+
 }
 
 
@@ -63,10 +67,14 @@
 
 @media screen and (max-width: 730px) {
   #main-container, #sidebar {
-  	width: 100%;
+  	width: 97%;
   }
 
-#menu-mobile.on {display: block;}
+  #sidebar {
+    float: left;
+  }
+
+	#menu-mobile.on {display: block;}
 
 
   #projectTitle {display: block;margin:0;position: relative;top:0;left:0;}
@@ -76,8 +84,8 @@
 
   #searchMenu {width: 48%;margin-left: 10px;}
 
-#mobil-menu {
-	display: block;
-}
-  #rightMenu {display: none; }
+	#mobil-menu {
+		display: block;
+	}
+	#rightMenu {display: none; }
 }

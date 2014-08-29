@@ -177,3 +177,70 @@ body{
 	width: 50%;
 	margin-left: auto;
 }
+
+
+.cf {clear: both;}
+
+#profil.description p {
+	display: inline-block;
+}
+#profil.description .attribute {
+	width: 30%; text-align: right;display: inline-block;float: left;margin: 10px 0;
+}
+#profil.description .value {
+	width: 70%;display: inline-block;float: right;margin: 10px 0;padding: 0 10px;
+}
+
+.update {float: right; margin-top: -45px;text-decoration: none; color: #fff;display: block;padding: 5px 10px;background-color: #57bd74;}
+
+.panel-admin {display: none;}
+.panel-admin.on {display: block;padding: 0 10px;}
+.panel-admin li {
+	list-style-type: none;
+}
+#rightMenuList .panel-admin li a{
+	font-size: 16px;
+}
+
+#current > div {
+	padding: 10px 20px;
+	width: 50%;
+}
+#current > div a{
+	display: block;
+	min-height: 100px;
+	text-decoration:none; 
+	color: #000;
+}
+#current h2, #potential h2, #news h2 {
+	margin-left: 20px
+}
+
+#current .right {
+	float: right;
+}
+#current .left {
+	float: left;
+}
+
+
+#news , #potential {position: relative;}
+#news h2, #potential h2 {margin-bottom: 0;}
+
+#news .infos, #potential .infos {
+	padding: 10px 20px;
+}
+
+#news .infos h3, #potential .infos h3 {
+	margin-top: 0;
+}
+#news .rate, #potential .rate{position: absolute;right: 10px; top: 60px;height: 20px;
+width: 106px;
+background-color: #fff;
+line-height: 20px;
+text-align: center;}
+
+#news .rate .percent, #potential .rate .percent{background-color: #57bd74;height: 15px;position: absolute;z-index: 1;
+top: 3px;
+left: 3px;}
+#news .rate .number, #potential .rate .number{position: absolute;width: 100%;height: 100%;z-index: 2;}

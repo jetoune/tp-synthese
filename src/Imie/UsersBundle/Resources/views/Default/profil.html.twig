@@ -1,0 +1,30 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+<h2>Mon profil :</h2>
+<a href="{{ path('users_profil_update') }}" class="update"> Modifier mon profil</a>
+<div id="profil" class="description">
+	<div class="cf">
+		<div class="attribute">Prénom :</div>
+		<div class="value"> {{ app.user.firstname}}</div>
+	</div>
+	<div class="cf">
+		<div class="attribute">Nom :</div>
+		<div class="value"> {{ app.user.lastname}}</div>
+	</div>
+	<div class="cf">
+		<div class="attribute">Description :</div>
+		<div class="value"> {{ app.user.description}}</div>
+	</div>
+	<div class="cf">
+		<div class="attribute">Numéro de téléphone : </div>
+		<div class="value">{{ app.user.phone}}</div>
+	</div>
+	<div class="cf">
+		<div class="attribute">Adresse :</div>
+		<div class="value"> {{ app.user.address}}</div>
+	</div>
+</div>
+
+{% endblock %}

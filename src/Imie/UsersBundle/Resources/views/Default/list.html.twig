@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+<h2>Liste des utilisateurs :</h2>
+
+{% if  users %}
+	<ul>
+		{% for user in users %}
+			<li>
+				<p><a href="">{{user.firstname}} {{user.lastname}}</a></p>
+			</li>
+			
+		{% endfor %}
+	</ul>
+{% endif %}
+
+{% endblock %}
+
+

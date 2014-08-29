@@ -135,17 +135,37 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/hello')) {
-            // users_homepage
-            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'users_homepage')), array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::indexAction',));
+        // users_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'users_homepage')), array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::indexAction',));
+        }
+
+        if (0 === strpos($pathinfo, '/profil')) {
+            // users_profil
+            if ($pathinfo === '/profil') {
+                return array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::profilAction',  '_route' => 'users_profil',);
             }
 
-            // roles_homepage
-            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'roles_homepage')), array (  '_controller' => 'Imie\\RolesBundle\\Controller\\DefaultController::indexAction',));
+            // users_profil_update
+            if ($pathinfo === '/profil/update') {
+                return array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::updateProfilAction',  '_route' => 'users_profil_update',);
             }
 
+        }
+
+        // users_list
+        if ($pathinfo === '/users/all') {
+            return array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::listAction',  '_route' => 'users_list',);
+        }
+
+        // users_admin_import
+        if ($pathinfo === '/admin/users/import') {
+            return array (  '_controller' => 'Imie\\UsersBundle\\Controller\\DefaultController::importAction',  '_route' => 'users_admin_import',);
+        }
+
+        // roles_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'roles_homepage')), array (  '_controller' => 'Imie\\RolesBundle\\Controller\\DefaultController::indexAction',));
         }
 
         if (0 === strpos($pathinfo, '/project')) {

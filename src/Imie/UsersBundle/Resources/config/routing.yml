@@ -1,3 +1,19 @@
 users_homepage:
     path:     /hello/{name}
     defaults: { _controller: UsersBundle:Default:index }
+
+users_profil:
+    path:     /profil
+    defaults: { _controller: UsersBundle:Default:profil }
+
+users_profil_update:
+    path:     /profil/update
+    defaults: { _controller: UsersBundle:Default:updateProfil }
+
+users_list:
+    path:     /users/all
+    defaults: { _controller: UsersBundle:Default:list }
+
+users_admin_import:
+    path:     /admin/users/import
+    defaults: { _controller: UsersBundle:Default:import }

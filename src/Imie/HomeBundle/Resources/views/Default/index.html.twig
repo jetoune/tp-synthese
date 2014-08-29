@@ -1,10 +1,39 @@
 {% extends "::base.html.twig" %}
 
 {% block body %}
-	<div id="current"></div>
-	<div id="potential"></div>
-	<div id="news"></div>
+	<div id="current">
+		<h2>Mes projets</h2>
+		<div class="right">
+			<a href="{{ path('projects_add') }}">
+				Vous n'avez aucun projet en cours. <br>
+				Déposez un nouveau projet !
+			</a>
+		</div>
+		<div class="left">
+			<a href="{{ path('projects_add') }}">
+				Vous n'avez aucun projet en cours. <br>
+				Déposez un nouveau projet !
+			</a>
+		</div>
+	</div>
+	<div id="potential">
+		<h2>Nouveaux projets</h2>
+		{% if newProjects %}
+		<div class="infos">
+			<h3>{{newProjects.name}}</h3>
+			<div class="rate" data-rate="{{newProjects.rate}}"><div class="number">{{newProjects.rate}} %</div><div class="percent"></div></div>
+			{{potentialProject.description}}
+		</div>
+		{% endif %}
+	</div>
+	<div id="news">
+		<h2>Projets potentiels</h2>
+		{% if potentialProject %}
+		<div class="infos">
+			<h3>{{potentialProject.name}}</h3>
+			<div class="rate" data-rate="{{potentialProject.rate}}"><div class="number">{{potentialProject.rate}} %</div><div class="percent"></div></div>
+			{{potentialProject.description}}
+		</div>
+		{% endif %}
+	</div>
 {% endblock %}
-
-
-

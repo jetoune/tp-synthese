@@ -1,0 +1,8 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<h2>Modifier mon profil : </h2>
+<a href="{{ path('users_profil') }}" class="update"> Revenir à mon profil</a>
+
+{{ form(form) }}
+{% endblock %}
