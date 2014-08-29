@@ -1,11 +1,15 @@
 {% extends "::base.html.twig" %}
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/Imie/css/project.css') }}">
+{% endblock %}
 
 {% block body %}
 
 Listes des compétences : 
 
 {% if  skills %}
-	<ul>
+	<ul class="list">
 		{% for skill in skills %}
 			<li>{{skill.libelle}}</li>
 		{% endfor %}

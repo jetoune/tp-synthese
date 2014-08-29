@@ -7,7 +7,7 @@
 
 {% block body %}
 <div id="titleForm">
-	Création de projet :
+	Demande de création de projet :
 </div>
 
 {{ form_start(form) }}
@@ -39,7 +39,7 @@
         
     </div>
     <div class="space">
-        {{ form_widget(form.save, { 'attr': {'value': 'Soumettre'} } ) }}
+        {{ form_widget(form.save, { 'label': 'Soumettre' }) }}
     </div>
 
 {{ form_end(form) }}
